@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Ollyo\\PaymentHub\\": "../tutor/ecommerce/PaymentGateways/Paypal/src",
+            "RY\\Tutor\\": "tutor"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "RY\\Tutor\\Composer\\Composer::removeOllyo"
+    },
+    "config": {
+        "vendor-dir": "includes/vendor",
+        "optimize-autoloader": true
+    }
+}
