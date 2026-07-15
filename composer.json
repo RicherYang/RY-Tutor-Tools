@@ -3,6 +3,8 @@
     "autoload": {
         "psr-4": {
             "Ollyo\\PaymentHub\\": "../tutor/ecommerce/PaymentGateways/Paypal/src",
+            "RY\\General\\": "includes/ry-general",
+            "RY\\Paid\\": "includes/ry-paid",
             "RY\\Tutor\\": "tutor"
         }
     },
