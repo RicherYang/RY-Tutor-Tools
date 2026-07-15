@@ -5,6 +5,7 @@ namespace RY\Tutor\Gateways\Ecpay;
 defined('ABSPATH') or exit;
 
 use RY\Tutor\Gateways\Ecpay\Gateway;
+use RY\General\Logs;
 
 final class Api extends AbstractsApi
 {
@@ -81,7 +82,7 @@ final class Api extends AbstractsApi
             $url = $this->api_url['checkout'];
         }
 
-        \RY_Logs::log(Gateway::LOG_HANDLE, 'info', 'Checkout #' . $payment_data->order_id, $data);
+        Logs::log(Gateway::LOG_HANDLE, 'info', 'Checkout #' . $payment_data->order_id, $data);
         do_action('ry_ecpay_gateway_checkout', $data, $payment_data);
 
         $method = 'post';

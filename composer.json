@@ -1,4 +1,5 @@
 {
+    "name": "ry/tutol-tools",
     "autoload": {
         "psr-4": {
             "Ollyo\\PaymentHub\\": "../tutor/ecommerce/PaymentGateways/Paypal/src",

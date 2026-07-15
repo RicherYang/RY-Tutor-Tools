@@ -4,6 +4,8 @@ namespace RY\Tutor\Gateways\Newebpay;
 
 defined('ABSPATH') or exit;
 
+use RY\General\Logs;
+
 final class Gateway
 {
     public const LOG_HANDLE = 'newebpay-tutor-api';
@@ -26,7 +28,7 @@ final class Gateway
         add_filter('tutor_payment_gateways', [$this, 'add_method_setting'], 100);
         add_filter('tutor_payment_method_labels', [$this, 'add_method_label']);
 
-        \RY_Logs::set_log(tutor_utils()->get_option('RY_newebpay_log', false), self::LOG_HANDLE);
+        Logs::set_log(tutor_utils()->get_option('RY_newebpay_log', false), self::LOG_HANDLE);
     }
 
     public function add_method($methods)

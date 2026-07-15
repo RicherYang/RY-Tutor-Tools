@@ -4,6 +4,7 @@ namespace RY\Tutor\Gateways\Ecpay;
 
 defined('ABSPATH') or exit;
 
+use RY\General\Logs;
 use RY\Tutor\Gateways\Ecpay\Gateway;
 
 final class Response extends AbstractsApi
@@ -37,7 +38,7 @@ final class Response extends AbstractsApi
                     return true;
                 }
 
-                \RY_Logs::log(Gateway::LOG_HANDLE, 'error', 'IPN request check failed', ['response' => $check_value, 'self' => $ipn_info_check_value]);
+                Logs::log(Gateway::LOG_HANDLE, 'error', 'IPN request check failed', ['response' => $check_value, 'self' => $ipn_info_check_value]);
             }
         }
         return false;
@@ -47,7 +48,7 @@ final class Response extends AbstractsApi
     {
         $info_value = $ipn_info;
         $info_value['order_id'] = $this->get_order_id($info_value, tutor_utils()->get_option('RY_general_prefix', ''));
-        \RY_Logs::log(Gateway::LOG_HANDLE, 'info', 'IPN request', ['data' => $info_value]);
+        Logs::log(Gateway::LOG_HANDLE, 'info', 'IPN request', ['data' => $info_value]);
 
         return $info_value;
     }

@@ -4,6 +4,7 @@ namespace RY\Tutor\Gateways\Smilepay;
 
 defined('ABSPATH') or exit;
 
+use RY\General\Logs;
 use RY\Tutor\Gateways\Smilepay\Gateway;
 
 final class Api extends AbstractsApi
@@ -67,7 +68,7 @@ final class Api extends AbstractsApi
             $url = $this->api_url['checkout'];
         }
 
-        \RY_Logs::log(Gateway::LOG_HANDLE, 'info', 'Checkout #' . $payment_data->order_id, $data);
+        Logs::log(Gateway::LOG_HANDLE, 'info', 'Checkout #' . $payment_data->order_id, $data);
         do_action('ry_smilepay_gateway_checkout', $data, $payment_data);
 
         $method = 'post';
