@@ -28,54 +28,54 @@ msgstr "https://richer.tw/"
 msgid "Richer Yang"
 msgstr "Richer Yang"
 
-#: includes/ry-general/html/log-info.php:63
+#: includes/ry-general/Page/html/log-info.php:63
 msgid "Download"
 msgstr "下載"
 
 #. translators: %1$s: Plugin name, %2$s: License URL
-#: includes/ry-general/abstract-admin.php:49
+#: includes/ry-general/AbstractAdmin.php:52
 #, php-format
 msgid "%1$s: Your <a href=\"%2$s\">license</a> is not activated yet!"
 msgstr "%1$s: 你的<a href=\"%2$s\">授權</a>尚未啟用！"
 
-#: includes/ry-general/admin-logs.php:25
-#: includes/ry-general/admin-logs.php:86
+#: includes/ry-general/Page/Logs.php:24
+#: includes/ry-general/Page/Logs.php:85
 msgid "Logs"
 msgstr "紀錄"
 
-#: includes/ry-general/admin-logs.php:146
+#: includes/ry-general/Page/Logs.php:145
 msgid "Delete successful."
 msgstr "刪除成功。"
 
-#: includes/ry-general/admin-logs.php:153
+#: includes/ry-general/Page/Logs.php:152
 msgid "Delete failed."
 msgstr "刪除失敗。"
 
 #. translators: %s: Path of log file
-#: includes/ry-general/html/log-info.php:5
+#: includes/ry-general/Page/html/log-info.php:5
 #, php-format
 msgid "Viewing log file %s"
 msgstr "檢視紀錄檔 %s"
 
-#: includes/ry-general/html/log-info.php:36
+#: includes/ry-general/Page/html/log-info.php:36
 msgid "Details"
 msgstr "詳細資訊"
 
-#: includes/ry-general/html/log-info.php:71
+#: includes/ry-general/Page/html/log-info.php:71
 msgid "Delete Permanently"
 msgstr "永久刪除"
 
-#: includes/ry-general/html/logs-select.php:3
+#: includes/ry-general/Page/html/logs-select.php:3
 msgid "Log Categories"
 msgstr "紀錄類別"
 
-#: includes/ry-general/html/logs-select.php:19
+#: includes/ry-general/Page/html/logs-select.php:19
 msgid "Log Files"
 msgstr "紀錄檔案"
 
 #. Plugin Name of the plugin
 #: ry-tutor-tools.php
-#: admin/admin.php:41
+#: admin/admin.php:46
 msgid "RY Tools for Tutor LMS"
 msgstr "RY Tools for Tutor LMS"
 
@@ -90,7 +90,7 @@ msgid "Tutor LMS payment tools"
 msgstr "Tutor LMS payment tools"
 
 #. translators: %1$s: Name of this plugin %2$s: min require version
-#: admin/admin.php:40
+#: admin/admin.php:45
 #, php-format
 msgid "<strong>%1$s</strong> is inactive. It require Tutor LMS version %2$s or newer."
 msgstr "<strong>%1$s</strong> 暫停運作。 需求 Tutor LMS %2$s 以上版本。"
@@ -238,14 +238,14 @@ msgctxt "SmilePay"
 msgid "Rotcheck"
 msgstr "驗證參數"
 
-#: includes/ry-general/admin-logs.php:88
+#: includes/ry-general/Page/Logs.php:87
 msgid "No logs found."
 msgstr "没有紀錄檔案。"
 
-#: tutor/Gateways/Ecpay/Gateway.php:55
-#: tutor/Gateways/Newebpay/Gateway.php:55
-#: tutor/Gateways/Payuni/Gateway.php:55
-#: tutor/Gateways/Smilepay/Gateway.php:55
+#: tutor/Gateways/Ecpay/Gateway.php:57
+#: tutor/Gateways/Newebpay/Gateway.php:57
+#: tutor/Gateways/Payuni/Gateway.php:57
+#: tutor/Gateways/Smilepay/Gateway.php:57
 msgid "Title"
 msgstr "標題"
 
@@ -267,30 +267,30 @@ msgstr "注意：本紀錄可能包含個人資料。"
 msgid "General settings"
 msgstr "一般設定"
 
-#: tutor/Gateways/Ecpay/Gateway.php:46
-#: tutor/Gateways/Ecpay/Gateway.php:56
-#: tutor/Gateways/Ecpay/Gateway.php:66
+#: tutor/Gateways/Ecpay/Gateway.php:48
+#: tutor/Gateways/Ecpay/Gateway.php:58
+#: tutor/Gateways/Ecpay/Gateway.php:68
 msgctxt "gateway label"
 msgid "ECPay Credit"
 msgstr "綠界金流信用卡"
 
-#: tutor/Gateways/Newebpay/Gateway.php:46
-#: tutor/Gateways/Newebpay/Gateway.php:56
-#: tutor/Gateways/Newebpay/Gateway.php:66
+#: tutor/Gateways/Newebpay/Gateway.php:48
+#: tutor/Gateways/Newebpay/Gateway.php:58
+#: tutor/Gateways/Newebpay/Gateway.php:68
 msgctxt "gateway label"
 msgid "NewebPay Credit"
 msgstr "藍新金流信用卡"
 
-#: tutor/Gateways/Payuni/Gateway.php:46
-#: tutor/Gateways/Payuni/Gateway.php:56
-#: tutor/Gateways/Payuni/Gateway.php:66
+#: tutor/Gateways/Payuni/Gateway.php:48
+#: tutor/Gateways/Payuni/Gateway.php:58
+#: tutor/Gateways/Payuni/Gateway.php:68
 msgctxt "gateway label"
 msgid "PAYUNi Credit"
 msgstr "統一金流信用卡"
 
-#: tutor/Gateways/Smilepay/Gateway.php:46
-#: tutor/Gateways/Smilepay/Gateway.php:56
-#: tutor/Gateways/Smilepay/Gateway.php:66
+#: tutor/Gateways/Smilepay/Gateway.php:48
+#: tutor/Gateways/Smilepay/Gateway.php:58
+#: tutor/Gateways/Smilepay/Gateway.php:68
 msgctxt "gateway label"
 msgid "SmilePay Credit"
 msgstr "速買配金流信用卡"
