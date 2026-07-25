@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-06-29T20:45:49+08:00\n"
-"PO-Revision-Date: 2026-07-14 14:51+0800\n"
+"PO-Revision-Date: 2026-07-24 12:07+0800\n"
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
@@ -33,21 +33,21 @@ msgid "Download"
 msgstr "下載"
 
 #. translators: %1$s: Plugin name, %2$s: License URL
-#: includes/ry-general/AbstractAdmin.php:52
+#: includes/ry-paid/AbstractAdmin.php:33
 #, php-format
 msgid "%1$s: Your <a href=\"%2$s\">license</a> is not activated yet!"
 msgstr "%1$s: 你的<a href=\"%2$s\">授權</a>尚未啟用！"
 
-#: includes/ry-general/Page/Logs.php:24
-#: includes/ry-general/Page/Logs.php:85
+#: includes/ry-general/Page/Logs.php:27
+#: includes/ry-general/Page/Logs.php:73
 msgid "Logs"
 msgstr "紀錄"
 
-#: includes/ry-general/Page/Logs.php:145
+#: includes/ry-general/Page/Logs.php:134
 msgid "Delete successful."
 msgstr "刪除成功。"
 
-#: includes/ry-general/Page/Logs.php:152
+#: includes/ry-general/Page/Logs.php:141
 msgid "Delete failed."
 msgstr "刪除失敗。"
 
@@ -69,13 +69,13 @@ msgstr "永久刪除"
 msgid "Log Categories"
 msgstr "紀錄類別"
 
-#: includes/ry-general/Page/html/logs-select.php:19
+#: includes/ry-general/Page/html/logs-select.php:18
 msgid "Log Files"
 msgstr "紀錄檔案"
 
 #. Plugin Name of the plugin
 #: ry-tutor-tools.php
-#: admin/admin.php:46
+#: admin/admin.php:43
 msgid "RY Tools for Tutor LMS"
 msgstr "RY Tools for Tutor LMS"
 
@@ -90,7 +90,7 @@ msgid "Tutor LMS payment tools"
 msgstr "Tutor LMS payment tools"
 
 #. translators: %1$s: Name of this plugin %2$s: min require version
-#: admin/admin.php:45
+#: admin/admin.php:42
 #, php-format
 msgid "<strong>%1$s</strong> is inactive. It require Tutor LMS version %2$s or newer."
 msgstr "<strong>%1$s</strong> 暫停運作。 需求 Tutor LMS %2$s 以上版本。"
@@ -238,7 +238,7 @@ msgctxt "SmilePay"
 msgid "Rotcheck"
 msgstr "驗證參數"
 
-#: includes/ry-general/Page/Logs.php:87
+#: includes/ry-general/Page/Logs.php:75
 msgid "No logs found."
 msgstr "没有紀錄檔案。"
 
@@ -326,3 +326,29 @@ msgstr "調整國家選單只有台灣。"
 #: tutor/Admin/Settings.php:117
 msgid "Note: This will overwrite the TutorLMS original file, and it CANNOT be recovered."
 msgstr "注意：這將覆蓋 TutorLMS 的原始文件，並且「無法」恢復。"
+
+#: includes/ry-general/ActionScheduler/ListTable.php:30
+msgid "async"
+msgstr "非同步"
+
+#. translators: %s: date interval
+#: includes/ry-general/ActionScheduler/ListTable.php:45
+#, php-format
+msgid " (%s ago)"
+msgstr " (%s 之前)"
+
+#. translators: %s: date interval
+#: includes/ry-general/ActionScheduler/ListTable.php:48
+#, php-format
+msgid " (%s)"
+msgstr " (%s)"
+
+#. translators: %d: Number of days
+#: includes/ry-general/Page/html/log-info.php:75
+#, php-format
+msgid "Log file will delete after %d days"
+msgstr "紀錄檔案將在 %d 天後刪除"
+
+#: includes/ry-general/Page/html/logs-select.php:35
+msgid "Dir size:"
+msgstr "目錄大小："

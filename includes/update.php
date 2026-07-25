@@ -2,6 +2,8 @@
 
 defined('ABSPATH') or exit;
 
+use RY\General\V20260724\Logs;
+
 final class RY_TFTUTOR_Update
 {
     public static function update()
@@ -18,6 +20,16 @@ final class RY_TFTUTOR_Update
         }
 
         if (version_compare($now_version, '2026.7.16', '<')) {
+            $old_dir = WP_CONTENT_DIR . '/ry-logs';
+            if (is_dir($old_dir)) {
+                $new_dir = Logs::get_log_directory();
+                foreach (new \FilesystemIterator($old_dir, \FilesystemIterator::SKIP_DOTS) as $file) {
+                    @rename($file->getPathname(), $new_dir . $file->getFilename());
+                }
+                @rmdir($old_dir);
+            }
+            add_action('init', [Logs::class, 'set_cron_job']);
+
             RY_TFTUTOR::update_option('version', '2026.7.16', true);
         }
     }

@@ -4,7 +4,7 @@ namespace RY\Tutor\Gateways\Ecpay;
 
 defined('ABSPATH') or exit;
 
-use RY\General\Logs;
+use RY\General\V20260724\Logs;
 
 final class Gateway
 {

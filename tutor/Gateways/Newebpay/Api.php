@@ -4,7 +4,7 @@ namespace RY\Tutor\Gateways\Newebpay;
 
 defined('ABSPATH') or exit;
 
-use RY\General\Logs;
+use RY\General\V20260724\Logs;
 use RY\Tutor\Gateways\Newebpay\Gateway;
 
 final class Api extends AbstractsApi
@@ -44,9 +44,9 @@ final class Api extends AbstractsApi
             'MerchantOrderNo' => $this->generate_trade_no($payment_data->order_id, tutor_utils()->get_option('RY_general_prefix', '')),
             'Amt' => (int) ceil($payment_data->total_price),
             'ItemDesc' => $item_name,
-            'ReturnURL' => str_replace('localhost', 'example.com', $config->get('success_url')),
-            'NotifyURL' => str_replace('localhost', 'example.com', $config->get('webhook_url')),
-            'CustomerURL' => str_replace('localhost', 'example.com', $config->get('success_url')),
+            'ReturnURL' => $config->get('success_url'),
+            'NotifyURL' => $config->get('webhook_url'),
+            'CustomerURL' => $config->get('success_url'),
             'Email' => $payment_data->billing_address->email,
             'EmailModify' => 0,
             'CREDIT' => 0,

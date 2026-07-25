@@ -4,7 +4,7 @@ namespace RY\Tutor\Gateways\Smilepay;
 
 defined('ABSPATH') or exit;
 
-use RY\General\Logs;
+use RY\General\V20260724\Logs;
 use RY\Tutor\Gateways\Smilepay\Gateway;
 
 final class Response extends AbstractsApi
