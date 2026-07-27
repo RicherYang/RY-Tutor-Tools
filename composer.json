@@ -1,11 +1,14 @@
 {
-    "name": "ry/tutol-tools",
-    "version": "2026.7.16",
+    "name": "ry/tutor-tools",
+    "version": "2026.7.27",
+    "require": {
+        "woocommerce/action-scheduler": "^4.0"
+    },
     "autoload": {
         "psr-4": {
             "Ollyo\\PaymentHub\\": "../tutor/ecommerce/PaymentGateways/Paypal/src",
-            "RY\\General\\V20260724\\": "includes/ry-general",
-            "RY\\Paid\\V20260724\\": "includes/ry-paid",
+            "RY\\General\\V20260727\\": "includes/ry-general",
+            "RY\\Paid\\V20260727\\": "includes/ry-paid",
             "RY\\Tutor\\": "tutor"
         }
     },
@@ -14,6 +17,9 @@
     },
     "config": {
         "vendor-dir": "includes/vendor",
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.2"
+        }
     }
 }

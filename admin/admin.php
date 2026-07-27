@@ -2,7 +2,7 @@
 
 defined('ABSPATH') or exit;
 
-use RY\Paid\V20260724\AbstractAdmin;
+use RY\Paid\V20260727\AbstractAdmin;
 
 final class RY_TFTUTOR_Admin extends AbstractAdmin
 {

@@ -2,7 +2,7 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: RY Tools for Tutor LMS 2026.7.16\n"
+"Project-Id-Version: RY Tools for Tutor LMS 2026.7.27\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ry-tutor-tools\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,21 +101,44 @@ msgstr ""
 msgid "Dir size:"
 msgstr ""
 
+#: includes/ry-general/Page/html/options.php:10
+#: includes/ry-general/Page/html/options.php:13
+msgid "Enable tracking"
+msgstr ""
+
+#: includes/ry-general/Page/html/options.php:15
+msgid "Allow usage of RY Plugin to be tracked"
+msgstr ""
+
+#: includes/ry-general/Page/html/options.php:18
+#, php-format
+msgid "Read about what usage data is tracked at: %s ."
+msgstr ""
+
 #: includes/ry-general/Page/Logs.php:27
-#: includes/ry-general/Page/Logs.php:73
+#: includes/ry-general/Page/Logs.php:75
 msgid "Logs"
 msgstr ""
 
-#: includes/ry-general/Page/Logs.php:75
+#: includes/ry-general/Page/Logs.php:77
 msgid "No logs found."
 msgstr ""
 
-#: includes/ry-general/Page/Logs.php:134
+#: includes/ry-general/Page/Logs.php:136
 msgid "Delete successful."
 msgstr ""
 
-#: includes/ry-general/Page/Logs.php:141
+#: includes/ry-general/Page/Logs.php:143
 msgid "Delete failed."
+msgstr ""
+
+#: includes/ry-general/Page/Option.php:21
+#: includes/ry-general/Page/Option.php:35
+msgid "Options"
+msgstr ""
+
+#: includes/ry-general/Page/Option.php:64
+msgid "Settings saved."
 msgstr ""
 
 #. translators: %1$s: Plugin name, %2$s: License URL

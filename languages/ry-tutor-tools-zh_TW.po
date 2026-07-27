@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-06-29T20:45:49+08:00\n"
-"PO-Revision-Date: 2026-07-24 12:07+0800\n"
+"PO-Revision-Date: 2026-07-26 23:12+0800\n"
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
@@ -39,15 +39,15 @@ msgid "%1$s: Your <a href=\"%2$s\">license</a> is not activated yet!"
 msgstr "%1$s: 你的<a href=\"%2$s\">授權</a>尚未啟用！"
 
 #: includes/ry-general/Page/Logs.php:27
-#: includes/ry-general/Page/Logs.php:73
+#: includes/ry-general/Page/Logs.php:75
 msgid "Logs"
 msgstr "紀錄"
 
-#: includes/ry-general/Page/Logs.php:134
+#: includes/ry-general/Page/Logs.php:136
 msgid "Delete successful."
 msgstr "刪除成功。"
 
-#: includes/ry-general/Page/Logs.php:141
+#: includes/ry-general/Page/Logs.php:143
 msgid "Delete failed."
 msgstr "刪除失敗。"
 
@@ -238,7 +238,7 @@ msgctxt "SmilePay"
 msgid "Rotcheck"
 msgstr "驗證參數"
 
-#: includes/ry-general/Page/Logs.php:75
+#: includes/ry-general/Page/Logs.php:77
 msgid "No logs found."
 msgstr "没有紀錄檔案。"
 
@@ -352,3 +352,26 @@ msgstr "紀錄檔案將在 %d 天後刪除"
 #: includes/ry-general/Page/html/logs-select.php:35
 msgid "Dir size:"
 msgstr "目錄大小："
+
+#: includes/ry-general/Page/html/options.php:10
+#: includes/ry-general/Page/html/options.php:13
+msgid "Enable tracking"
+msgstr "啟用追蹤"
+
+#: includes/ry-general/Page/html/options.php:15
+msgid "Allow usage of RY Plugin to be tracked"
+msgstr "允許 RY Plugin 追蹤使用情況"
+
+#: includes/ry-general/Page/html/options.php:18
+#, php-format
+msgid "Read about what usage data is tracked at: %s ."
+msgstr "閱讀 %s 以理解我們追蹤那些數據。"
+
+#: includes/ry-general/Page/Option.php:21
+#: includes/ry-general/Page/Option.php:35
+msgid "Options"
+msgstr "設定"
+
+#: includes/ry-general/Page/Option.php:64
+msgid "Settings saved."
+msgstr "設定已儲存。"
