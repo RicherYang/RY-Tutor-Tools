@@ -1,11 +1,11 @@
 <?php
 
-namespace RY\Tutor\Gateways\Smilepay\Payments;
+namespace RY\Tutor\Tutor\Gateways\Smilepay\Payments;
 
 defined('ABSPATH') or exit;
 
 use Ollyo\PaymentHub\Core\Payment\BasePayment;
-use RY\Tutor\Gateways\Smilepay\PaymentTrait;
+use RY\Tutor\Tutor\Gateways\Smilepay\PaymentTrait;
 
 final class Credit extends BasePayment
 {

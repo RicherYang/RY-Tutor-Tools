@@ -1,6 +1,6 @@
 <?php
 
-namespace RY\Tutor\Gateways\Smilepay;
+namespace RY\Tutor\Tutor\Gateways\Smilepay;
 
 defined('ABSPATH') or exit;
 

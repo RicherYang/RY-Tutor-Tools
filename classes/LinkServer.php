@@ -1,16 +1,18 @@
 <?php
 
+namespace RY\Tutor;
+
 defined('ABSPATH') or exit;
 
 use RY\Paid\V20260727\AbstractLinkServer;
 
-final class RY_TFTUTOR_LinkServer extends AbstractLinkServer
+final class LinkServer extends AbstractLinkServer
 {
     private static ?self $_instance = null;
 
     protected string $plugin_slug = 'ry-tutor-tools';
 
-    public static function instance(): RY_TFTUTOR_LinkServer
+    public static function instance(): LinkServer
     {
         if (null === self::$_instance) {
             self::$_instance = new self();

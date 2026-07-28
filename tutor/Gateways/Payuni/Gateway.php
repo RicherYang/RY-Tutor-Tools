@@ -1,6 +1,6 @@
 <?php
 
-namespace RY\Tutor\Gateways\Payuni;
+namespace RY\Tutor\Tutor\Gateways\Payuni;
 
 defined('ABSPATH') or exit;
 

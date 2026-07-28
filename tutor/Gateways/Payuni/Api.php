@@ -1,11 +1,10 @@
 <?php
 
-namespace RY\Tutor\Gateways\Payuni;
+namespace RY\Tutor\Tutor\Gateways\Payuni;
 
 defined('ABSPATH') or exit;
 
 use RY\General\V20260727\Logs;
-use RY\Tutor\Gateways\Payuni\Gateway;
 
 final class Api extends AbstractsApi
 {

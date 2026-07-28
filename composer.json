@@ -9,7 +9,9 @@
             "Ollyo\\PaymentHub\\": "../tutor/ecommerce/PaymentGateways/Paypal/src",
             "RY\\General\\V20260727\\": "includes/ry-general",
             "RY\\Paid\\V20260727\\": "includes/ry-paid",
-            "RY\\Tutor\\": "tutor"
+            "RY\\Tutor\\": "classes",
+            "RY\\Tutor\\Admin\\": "admin",
+            "RY\\Tutor\\Tutor\\": "tutor"
         }
     },
     "scripts": {

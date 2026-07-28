@@ -1,10 +1,10 @@
 <?php
 
-namespace RY\Tutor\Gateways\Payuni;
+namespace RY\Tutor\Tutor\Gateways\Payuni;
 
 defined('ABSPATH') or exit;
 
-use RY\Tutor\Gateways\Payuni\Payments\Credit;
+use RY\Tutor\Tutor\Gateways\Payuni\Payments\Credit;
 use Tutor\PaymentGateways\GatewayBase;
 
 final class GatewayCredit extends GatewayBase

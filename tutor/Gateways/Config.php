@@ -1,6 +1,6 @@
 <?php
 
-namespace RY\Tutor\Gateways;
+namespace RY\Tutor\Tutor\Gateways;
 
 defined('ABSPATH') or exit;
 

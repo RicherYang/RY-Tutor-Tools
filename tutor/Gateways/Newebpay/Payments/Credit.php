@@ -1,11 +1,11 @@
 <?php
 
-namespace RY\Tutor\Gateways\Newebpay\Payments;
+namespace RY\Tutor\Tutor\Gateways\Newebpay\Payments;
 
 defined('ABSPATH') or exit;
 
 use Ollyo\PaymentHub\Core\Payment\BasePayment;
-use RY\Tutor\Gateways\Newebpay\PaymentTrait;
+use RY\Tutor\Tutor\Gateways\Newebpay\PaymentTrait;
 
 final class Credit extends BasePayment
 {

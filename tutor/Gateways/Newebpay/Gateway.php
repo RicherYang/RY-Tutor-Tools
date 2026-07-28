@@ -1,6 +1,6 @@
 <?php
 
-namespace RY\Tutor\Gateways\Newebpay;
+namespace RY\Tutor\Tutor\Gateways\Newebpay;
 
 defined('ABSPATH') or exit;
 

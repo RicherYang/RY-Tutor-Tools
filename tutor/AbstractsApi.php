@@ -1,6 +1,6 @@
 <?php
 
-namespace RY\Tutor;
+namespace RY\Tutor\Tutor;
 
 defined('ABSPATH') or exit;
 

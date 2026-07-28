@@ -1,12 +1,12 @@
 <?php
 
-namespace RY\Tutor\Gateways\Smilepay;
+namespace RY\Tutor\Tutor\Gateways\Smilepay;
 
 defined('ABSPATH') or exit;
 
-use RY\Tutor\AbstractsApi as Base_AbstractsApi;
+use RY\Tutor\Tutor\AbstractsApi as BaseAbstractsApi;
 
-abstract class AbstractsApi extends Base_AbstractsApi
+abstract class AbstractsApi extends BaseAbstractsApi
 {
     public function die_success($res)
     {

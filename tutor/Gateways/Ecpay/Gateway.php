@@ -1,6 +1,6 @@
 <?php
 
-namespace RY\Tutor\Gateways\Ecpay;
+namespace RY\Tutor\Tutor\Gateways\Ecpay;
 
 defined('ABSPATH') or exit;
 

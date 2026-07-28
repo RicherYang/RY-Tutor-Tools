@@ -1,16 +1,20 @@
 <?php
 
+namespace RY\Tutor\Admin;
+
 defined('ABSPATH') or exit;
 
 use RY\Paid\V20260727\AbstractAdmin;
+use RY\Tutor\License;
+use RY\Tutor\Main;
 
-final class RY_TFTUTOR_Admin extends AbstractAdmin
+final class Admin extends AbstractAdmin
 {
     private static ?self $_instance = null;
 
-    protected RY_TFTUTOR_License $license;
+    protected License $license;
 
-    public static function instance(): RY_TFTUTOR_Admin
+    public static function instance(): Admin
     {
         if (null === self::$_instance) {
             self::$_instance = new self();
@@ -26,7 +30,7 @@ final class RY_TFTUTOR_Admin extends AbstractAdmin
 
         add_action('admin_notices', [$this, 'need_tutor']);
 
-        $this->license = RY_TFTUTOR_License::instance();
+        $this->license = License::instance();
         add_filter('ry-plugin/license_list', [$this, 'add_license']);
 
         if ($this->license->is_activated()) {
@@ -36,12 +40,12 @@ final class RY_TFTUTOR_Admin extends AbstractAdmin
 
     public function need_tutor(): void
     {
-        if (!defined('TUTOR_VERSION') || version_compare(TUTOR_VERSION, RY_TFTUTOR::MIN_TUTOR_VERSION, '<')) {
+        if (!defined('TUTOR_VERSION') || version_compare(TUTOR_VERSION, Main::MIN_TUTOR_VERSION, '<')) {
             $message = sprintf(
                 /* translators: %1$s: Name of this plugin %2$s: min require version */
                 __('<strong>%1$s</strong> is inactive. It require Tutor LMS version %2$s or newer.', 'ry-tutor-tools'),
                 __('RY Tools for Tutor LMS', 'ry-tutor-tools'),
-                RY_TFTUTOR::MIN_TUTOR_VERSION,
+                Main::MIN_TUTOR_VERSION,
             );
             printf('<div class="error"><p>%s</p></div>', wp_kses($message, ['strong' => []]));
         }

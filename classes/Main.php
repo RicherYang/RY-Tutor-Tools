@@ -1,10 +1,19 @@
 <?php
 
+namespace RY\Tutor;
+
 defined('ABSPATH') or exit;
 
 use RY\General\V20260727\AbstractBasic;
+use RY\Tutor\Admin\Admin;
+use RY\Tutor\Tutor\Admin\Settings;
+use RY\Tutor\Tutor\Country;
+use RY\Tutor\Tutor\Gateways\Ecpay\Gateway as EcpayGateway;
+use RY\Tutor\Tutor\Gateways\Newebpay\Gateway as NewebpayGateway;
+use RY\Tutor\Tutor\Gateways\Payuni\Gateway as PayuniGateway;
+use RY\Tutor\Tutor\Gateways\Smilepay\Gateway as SmilepayGateway;
 
-final class RY_TFTUTOR extends AbstractBasic
+final class Main extends AbstractBasic
 {
     public const OPTION_PREFIX = 'RY_TFTUTOR_';
 
@@ -14,7 +23,7 @@ final class RY_TFTUTOR extends AbstractBasic
 
     private static ?self $_instance = null;
 
-    public static function instance(): RY_TFTUTOR
+    public static function instance(): Main
     {
         if (null === self::$_instance) {
             self::$_instance = new self();
@@ -29,8 +38,7 @@ final class RY_TFTUTOR extends AbstractBasic
         load_plugin_textdomain('ry-tutor-tools', false, plugin_basename(dirname(__DIR__)) . '/languages');
 
         if (is_admin()) {
-            include_once RY_TFTUTOR_PLUGIN_DIR . 'includes/update.php';
-            RY_TFTUTOR_Update::update();
+            Update::update();
         }
 
         add_action('init', [$this, 'do_wp_init'], 9);
@@ -38,14 +46,10 @@ final class RY_TFTUTOR extends AbstractBasic
 
     public function do_wp_init(): void
     {
-        include_once RY_TFTUTOR_PLUGIN_DIR . 'includes/license.php';
-        include_once RY_TFTUTOR_PLUGIN_DIR . 'includes/link-server.php';
-        include_once RY_TFTUTOR_PLUGIN_DIR . 'includes/updater.php';
-        RY_TFTUTOR_Updater::instance();
+        Updater::instance();
 
         if (is_admin()) {
-            include_once RY_TFTUTOR_PLUGIN_DIR . 'admin/admin.php';
-            RY_TFTUTOR_Admin::instance();
+            Admin::instance();
         }
 
         if (did_action('tutor_loaded')) {
@@ -53,29 +57,29 @@ final class RY_TFTUTOR extends AbstractBasic
                 return;
             }
 
-            if (RY_TFTUTOR_License::instance()->is_activated()) {
-                RY\Tutor\Main::instance();
+            if (License::instance()->is_activated()) {
+                Country::instance();
 
                 if (tutor_utils()->is_monetize_by_tutor()) {
                     if (tutor_utils()->get_option('RY_enabled_ecpay', false)) {
-                        RY\Tutor\Gateways\Ecpay\Gateway::instance();
+                        EcpayGateway::instance();
                     }
 
                     if (tutor_utils()->get_option('RY_enabled_newebpay', false)) {
-                        RY\Tutor\Gateways\Newebpay\Gateway::instance();
+                        NewebpayGateway::instance();
                     }
 
                     if (tutor_utils()->get_option('RY_enabled_payuni', false)) {
-                        RY\Tutor\Gateways\Payuni\Gateway::instance();
+                        PayuniGateway::instance();
                     }
 
                     if (tutor_utils()->get_option('RY_enabled_smilepay', false)) {
-                        RY\Tutor\Gateways\Smilepay\Gateway::instance();
+                        SmilepayGateway::instance();
                     }
                 }
 
                 if (is_admin()) {
-                    RY\Tutor\Admin\Settings::instance();
+                    Settings::instance();
                 }
             }
         }
@@ -87,7 +91,7 @@ final class RY_TFTUTOR extends AbstractBasic
             return;
         }
 
-        RY_TFTUTOR_LinkServer::instance()->send_tracking();
+        LinkServer::instance()->send_tracking();
     }
 
     public static function plugin_activation(): void {}

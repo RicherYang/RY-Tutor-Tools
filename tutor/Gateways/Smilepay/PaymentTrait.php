@@ -1,14 +1,12 @@
 <?php
 
-namespace RY\Tutor\Gateways\Smilepay;
+namespace RY\Tutor\Tutor\Gateways\Smilepay;
 
 defined('ABSPATH') or exit;
 
 use GuzzleHttp\Exception\RequestException;
 use Ollyo\PaymentHub\Core\Support\System;
 use Ollyo\PaymentHub\Core\Support\Uri;
-use RY\Tutor\Gateways\Smilepay\Api;
-use RY\Tutor\Gateways\Smilepay\Response;
 
 trait PaymentTrait
 {

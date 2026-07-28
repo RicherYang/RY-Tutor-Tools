@@ -1,10 +1,10 @@
 <?php
 
-namespace RY\Tutor\Gateways\Smilepay;
+namespace RY\Tutor\Tutor\Gateways\Smilepay;
 
 defined('ABSPATH') or exit;
 
-use RY\Tutor\Gateways\Smilepay\Payments\Credit;
+use RY\Tutor\Tutor\Gateways\Smilepay\Payments\Credit;
 use Tutor\PaymentGateways\GatewayBase;
 
 final class GatewayCredit extends GatewayBase

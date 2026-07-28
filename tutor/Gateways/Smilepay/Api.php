@@ -1,11 +1,10 @@
 <?php
 
-namespace RY\Tutor\Gateways\Smilepay;
+namespace RY\Tutor\Tutor\Gateways\Smilepay;
 
 defined('ABSPATH') or exit;
 
 use RY\General\V20260727\Logs;
-use RY\Tutor\Gateways\Smilepay\Gateway;
 
 final class Api extends AbstractsApi
 {

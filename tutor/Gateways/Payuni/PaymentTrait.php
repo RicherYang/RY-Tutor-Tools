@@ -1,13 +1,11 @@
 <?php
 
-namespace RY\Tutor\Gateways\Payuni;
+namespace RY\Tutor\Tutor\Gateways\Payuni;
 
 defined('ABSPATH') or exit;
 
 use GuzzleHttp\Exception\RequestException;
 use Ollyo\PaymentHub\Core\Support\System;
-use RY\Tutor\Gateways\Payuni\Api;
-use RY\Tutor\Gateways\Payuni\Response;
 
 trait PaymentTrait
 {

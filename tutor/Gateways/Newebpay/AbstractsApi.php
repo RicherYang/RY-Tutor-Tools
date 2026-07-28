@@ -1,12 +1,12 @@
 <?php
 
-namespace RY\Tutor\Gateways\Newebpay;
+namespace RY\Tutor\Tutor\Gateways\Newebpay;
 
 defined('ABSPATH') or exit;
 
-use RY\Tutor\AbstractsApi as Base_AbstractsApi;
+use RY\Tutor\Tutor\AbstractsApi as BaseAbstractsApi;
 
-abstract class AbstractsApi extends Base_AbstractsApi
+abstract class AbstractsApi extends BaseAbstractsApi
 {
     protected function generate_trade_no($order_ID, $prefix = ''): string
     {

@@ -1,11 +1,10 @@
 <?php
 
-namespace RY\Tutor\Gateways\Ecpay;
+namespace RY\Tutor\Tutor\Gateways\Ecpay;
 
 defined('ABSPATH') or exit;
 
 use RY\General\V20260727\Logs;
-use RY\Tutor\Gateways\Ecpay\Gateway;
 
 final class Api extends AbstractsApi
 {

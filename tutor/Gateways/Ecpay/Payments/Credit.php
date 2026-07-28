@@ -1,11 +1,11 @@
 <?php
 
-namespace RY\Tutor\Gateways\Ecpay\Payments;
+namespace RY\Tutor\Tutor\Gateways\Ecpay\Payments;
 
 defined('ABSPATH') or exit;
 
 use Ollyo\PaymentHub\Core\Payment\BasePayment;
-use RY\Tutor\Gateways\Ecpay\PaymentTrait;
+use RY\Tutor\Tutor\Gateways\Ecpay\PaymentTrait;
 
 final class Credit extends BasePayment
 {

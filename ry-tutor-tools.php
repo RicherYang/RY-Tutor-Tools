@@ -16,6 +16,8 @@
  * Domain Path: /languages
  */
 
+use RY\Tutor\Main;
+
 defined('ABSPATH') or exit;
 
 define('RY_TFTUTOR_VERSION', '2026.7.27');
@@ -24,14 +26,8 @@ define('RY_TFTUTOR_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('RY_TFTUTOR_PLUGIN_BASENAME', plugin_basename(__FILE__));
 
 require_once RY_TFTUTOR_PLUGIN_DIR . 'includes/vendor/autoload.php';
-require_once RY_TFTUTOR_PLUGIN_DIR . 'includes/main.php';
 
-register_activation_hook(__FILE__, ['RY_TFTUTOR', 'plugin_activation']);
-register_deactivation_hook(__FILE__, ['RY_TFTUTOR', 'plugin_deactivation']);
+register_activation_hook(__FILE__, [Main::class, 'plugin_activation']);
+register_deactivation_hook(__FILE__, [Main::class, 'plugin_deactivation']);
 
-function RY_TFTUTOR(): RY_TFTUTOR
-{
-    return RY_TFTUTOR::instance();
-}
-
-RY_TFTUTOR();
+Main::instance();

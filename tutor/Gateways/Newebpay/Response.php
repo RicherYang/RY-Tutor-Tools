@@ -1,11 +1,10 @@
 <?php
 
-namespace RY\Tutor\Gateways\Newebpay;
+namespace RY\Tutor\Tutor\Gateways\Newebpay;
 
 defined('ABSPATH') or exit;
 
 use RY\General\V20260727\Logs;
-use RY\Tutor\Gateways\Newebpay\Gateway;
 
 final class Response extends AbstractsApi
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace RY\Tutor\Gateways\Newebpay;
+namespace RY\Tutor\Tutor\Gateways\Newebpay;
 
 defined('ABSPATH') or exit;
 
-use RY\Tutor\Gateways\Config;
+use RY\Tutor\Tutor\Gateways\Config;
 use Tutor\PaymentGateways\Configs\PaymentUrlsTrait;
 
 final class GatewayCreditConfig extends Config

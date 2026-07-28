@@ -1,14 +1,14 @@
 <?php
 
-namespace RY\Tutor;
+namespace RY\Tutor\Tutor;
 
 defined('ABSPATH') or exit;
 
-final class Main
+final class Country
 {
     private static ?self $_instance = null;
 
-    public static function instance(): Main
+    public static function instance(): Country
     {
         if (null === self::$_instance) {
             self::$_instance = new self();
@@ -33,6 +33,7 @@ final class Main
                 return $status;
             }
         }
+
         $plugin_file = RY_TFTUTOR_PLUGIN_DIR . 'assets/json/countries.json';
         $tutor_file = trailingslashit(tutor()->path) . 'assets/json/countries.json';
         if (file_exists($plugin_file)) {

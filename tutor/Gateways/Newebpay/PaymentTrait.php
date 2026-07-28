@@ -1,13 +1,11 @@
 <?php
 
-namespace RY\Tutor\Gateways\Newebpay;
+namespace RY\Tutor\Tutor\Gateways\Newebpay;
 
 defined('ABSPATH') or exit;
 
 use GuzzleHttp\Exception\RequestException;
 use Ollyo\PaymentHub\Core\Support\System;
-use RY\Tutor\Gateways\Newebpay\Api;
-use RY\Tutor\Gateways\Newebpay\Response;
 
 trait PaymentTrait
 {

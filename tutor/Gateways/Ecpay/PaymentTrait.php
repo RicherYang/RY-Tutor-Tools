@@ -1,13 +1,11 @@
 <?php
 
-namespace RY\Tutor\Gateways\Ecpay;
+namespace RY\Tutor\Tutor\Gateways\Ecpay;
 
 defined('ABSPATH') or exit;
 
 use GuzzleHttp\Exception\RequestException;
 use Ollyo\PaymentHub\Core\Support\System;
-use RY\Tutor\Gateways\Ecpay\Api;
-use RY\Tutor\Gateways\Ecpay\Response;
 
 trait PaymentTrait
 {
