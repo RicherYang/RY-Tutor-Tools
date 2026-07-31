@@ -4,7 +4,7 @@ namespace RY\Tutor\Tutor\Gateways\Smilepay;
 
 defined('ABSPATH') or exit;
 
-use RY\General\V20260727\Logs;
+use RY\General\V20260729\Logs;
 
 final class Gateway
 {

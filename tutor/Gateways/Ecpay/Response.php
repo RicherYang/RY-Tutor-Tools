@@ -4,7 +4,7 @@ namespace RY\Tutor\Tutor\Gateways\Ecpay;
 
 defined('ABSPATH') or exit;
 
-use RY\General\V20260727\Logs;
+use RY\General\V20260729\Logs;
 
 final class Response extends AbstractsApi
 {

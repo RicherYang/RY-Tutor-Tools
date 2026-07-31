@@ -4,7 +4,7 @@ namespace RY\Tutor\Admin;
 
 defined('ABSPATH') or exit;
 
-use RY\Paid\V20260727\AbstractAdmin;
+use RY\Paid\V20260729\AbstractAdmin;
 use RY\Tutor\License;
 use RY\Tutor\Main;
 
@@ -26,9 +26,7 @@ final class Admin extends AbstractAdmin
 
     protected function do_init(): void
     {
-        parent::do_init();
-
-        add_action('admin_notices', [$this, 'need_tutor']);
+        dd_action('admin_notices', [$this, 'need_tutor']);
 
         $this->license = License::instance();
         add_filter('ry-plugin/license_list', [$this, 'add_license']);

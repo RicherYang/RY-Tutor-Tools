@@ -33,8 +33,8 @@ final class Settings
         $page = Input::get('page', '');
         if ('tutor_settings' === $page) {
             $asset_info = include RY_TFTUTOR_PLUGIN_DIR . 'assets/admin/main.asset.php';
-            wp_enqueue_script(Main::OPTION_PREFIX . 'admin-main', RY_TFTUTOR_PLUGIN_URL . 'assets/admin/main.js', $asset_info['dependencies'], $asset_info['version'], true);
-            wp_enqueue_style(Main::OPTION_PREFIX . 'admin-main', RY_TFTUTOR_PLUGIN_URL . 'assets/admin/main.css', [], $asset_info['version']);
+            wp_enqueue_script(Main::get_prefix_name('admin-main'), RY_TFTUTOR_PLUGIN_URL . 'assets/admin/main.js', $asset_info['dependencies'], $asset_info['version'], true);
+            wp_enqueue_style(Main::get_prefix_name('admin-main'), RY_TFTUTOR_PLUGIN_URL . 'assets/admin/main.css', [], $asset_info['version']);
         }
     }
 

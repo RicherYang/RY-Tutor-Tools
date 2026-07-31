@@ -2,7 +2,7 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: RY Tools for Tutor LMS 2026.7.27\n"
+"Project-Id-Version: RY Tools for Tutor LMS 2026.7.31\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ry-tutor-tools\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: ry-tutor-tools.php
-#: admin/admin.php:43
+#: admin/Admin.php:45
 msgid "RY Tools for Tutor LMS"
 msgstr ""
 
@@ -40,7 +40,7 @@ msgid "https://richer.tw/"
 msgstr ""
 
 #. translators: %1$s: Name of this plugin %2$s: min require version
-#: admin/admin.php:42
+#: admin/Admin.php:44
 #, php-format
 msgid "<strong>%1$s</strong> is inactive. It require Tutor LMS version %2$s or newer."
 msgstr ""
@@ -66,25 +66,25 @@ msgid " (%s)"
 msgstr ""
 
 #. translators: %s: Path of log file
-#: includes/ry-general/Page/html/log-info.php:5
+#: includes/ry-general/Page/html/log-info.php:10
 #, php-format
 msgid "Viewing log file %s"
 msgstr ""
 
-#: includes/ry-general/Page/html/log-info.php:36
+#: includes/ry-general/Page/html/log-info.php:41
 msgid "Details"
 msgstr ""
 
-#: includes/ry-general/Page/html/log-info.php:63
+#: includes/ry-general/Page/html/log-info.php:65
 msgid "Download"
 msgstr ""
 
-#: includes/ry-general/Page/html/log-info.php:71
+#: includes/ry-general/Page/html/log-info.php:70
 msgid "Delete Permanently"
 msgstr ""
 
 #. translators: %d: Number of days
-#: includes/ry-general/Page/html/log-info.php:75
+#: includes/ry-general/Page/html/log-info.php:74
 #, php-format
 msgid "Log file will delete after %d days"
 msgstr ""
@@ -115,29 +115,34 @@ msgstr ""
 msgid "Read about what usage data is tracked at: %s ."
 msgstr ""
 
-#: includes/ry-general/Page/Logs.php:27
-#: includes/ry-general/Page/Logs.php:75
+#: includes/ry-general/Page/Logs.php:29
+#: includes/ry-general/Page/Logs.php:78
 msgid "Logs"
 msgstr ""
 
-#: includes/ry-general/Page/Logs.php:77
+#: includes/ry-general/Page/Logs.php:80
 msgid "No logs found."
 msgstr ""
 
-#: includes/ry-general/Page/Logs.php:136
+#: includes/ry-general/Page/Logs.php:158
 msgid "Delete successful."
 msgstr ""
 
-#: includes/ry-general/Page/Logs.php:143
+#: includes/ry-general/Page/Logs.php:165
 msgid "Delete failed."
 msgstr ""
 
-#: includes/ry-general/Page/Option.php:21
-#: includes/ry-general/Page/Option.php:35
+#: includes/ry-general/Page/Option.php:23
+#: includes/ry-general/Page/Option.php:37
 msgid "Options"
 msgstr ""
 
-#: includes/ry-general/Page/Option.php:64
+#: includes/ry-general/Page/Option.php:41
+#: includes/ry-paid/Page/License.php:75
+msgid "Save Changes"
+msgstr ""
+
+#: includes/ry-general/Page/Option.php:72
 msgid "Settings saved."
 msgstr ""
 
@@ -147,192 +152,192 @@ msgstr ""
 msgid "%1$s: Your <a href=\"%2$s\">license</a> is not activated yet!"
 msgstr ""
 
-#: tutor/Admin/Settings.php:43
+#: tutor/Admin/Settings.php:44
 msgid "RY Tools"
 msgstr ""
 
-#: tutor/Admin/Settings.php:49
+#: tutor/Admin/Settings.php:50
 msgid "Service provider"
 msgstr ""
 
-#: tutor/Admin/Settings.php:56
+#: tutor/Admin/Settings.php:57
 msgid "ECPay support"
 msgstr ""
 
-#: tutor/Admin/Settings.php:58
+#: tutor/Admin/Settings.php:59
 msgid "Enable ECPay gateway method."
 msgstr ""
 
-#: tutor/Admin/Settings.php:64
+#: tutor/Admin/Settings.php:65
 msgid "NewebPay support"
 msgstr ""
 
-#: tutor/Admin/Settings.php:66
+#: tutor/Admin/Settings.php:67
 msgid "Enable NewebPay gateway method."
 msgstr ""
 
-#: tutor/Admin/Settings.php:72
+#: tutor/Admin/Settings.php:73
 msgid "PAYUNi support"
 msgstr ""
 
-#: tutor/Admin/Settings.php:74
+#: tutor/Admin/Settings.php:75
 msgid "Enable PAYUNi gateway method."
 msgstr ""
 
-#: tutor/Admin/Settings.php:80
+#: tutor/Admin/Settings.php:81
 msgid "SmilePay support"
 msgstr ""
 
-#: tutor/Admin/Settings.php:82
+#: tutor/Admin/Settings.php:83
 msgid "Enable SmilePay gateway method."
 msgstr ""
 
-#: tutor/Admin/Settings.php:87
+#: tutor/Admin/Settings.php:88
 msgid "After switch enabled status, you need to reload the page to display the settings."
 msgstr ""
 
-#: tutor/Admin/Settings.php:92
+#: tutor/Admin/Settings.php:93
 msgid "General settings"
 msgstr ""
 
-#: tutor/Admin/Settings.php:99
+#: tutor/Admin/Settings.php:100
 msgid "Trade no prefix"
 msgstr ""
 
-#: tutor/Admin/Settings.php:100
+#: tutor/Admin/Settings.php:101
 msgid "The prefix string of trade no. Only letters and numbers allowed."
 msgstr ""
 
-#: tutor/Admin/Settings.php:107
+#: tutor/Admin/Settings.php:108
 msgid "Payment item name"
 msgstr ""
 
-#: tutor/Admin/Settings.php:108
+#: tutor/Admin/Settings.php:109
 msgid "If empty use the first course name."
 msgstr ""
 
-#: tutor/Admin/Settings.php:115
+#: tutor/Admin/Settings.php:116
 msgid "Address only TW"
 msgstr ""
 
-#: tutor/Admin/Settings.php:116
+#: tutor/Admin/Settings.php:117
 msgid "Change country list only Taiwan."
 msgstr ""
 
-#: tutor/Admin/Settings.php:117
+#: tutor/Admin/Settings.php:118
 msgid "Note: This will overwrite the TutorLMS original file, and it CANNOT be recovered."
 msgstr ""
 
-#: tutor/Admin/Settings.php:123
+#: tutor/Admin/Settings.php:124
 msgid "ECPay settings"
 msgstr ""
 
-#: tutor/Admin/Settings.php:131
-#: tutor/Admin/Settings.php:171
-#: tutor/Admin/Settings.php:211
-#: tutor/Admin/Settings.php:251
+#: tutor/Admin/Settings.php:132
+#: tutor/Admin/Settings.php:172
+#: tutor/Admin/Settings.php:212
+#: tutor/Admin/Settings.php:252
 msgid "Debug log"
 msgstr ""
 
-#: tutor/Admin/Settings.php:133
-#: tutor/Admin/Settings.php:173
-#: tutor/Admin/Settings.php:213
-#: tutor/Admin/Settings.php:253
+#: tutor/Admin/Settings.php:134
+#: tutor/Admin/Settings.php:174
+#: tutor/Admin/Settings.php:214
+#: tutor/Admin/Settings.php:254
 msgid "Note: this may log personal information."
 msgstr ""
 
-#: tutor/Admin/Settings.php:138
-#: tutor/Admin/Settings.php:178
-#: tutor/Admin/Settings.php:218
-#: tutor/Admin/Settings.php:258
+#: tutor/Admin/Settings.php:139
+#: tutor/Admin/Settings.php:179
+#: tutor/Admin/Settings.php:219
+#: tutor/Admin/Settings.php:259
 msgid "Sandbox"
 msgstr ""
 
-#: tutor/Admin/Settings.php:140
-#: tutor/Admin/Settings.php:180
-#: tutor/Admin/Settings.php:220
-#: tutor/Admin/Settings.php:260
+#: tutor/Admin/Settings.php:141
+#: tutor/Admin/Settings.php:181
+#: tutor/Admin/Settings.php:221
+#: tutor/Admin/Settings.php:261
 msgid "Note: Recommend using this for development purposes only."
 msgstr ""
 
-#: tutor/Admin/Settings.php:145
+#: tutor/Admin/Settings.php:146
 msgctxt "ECPay"
 msgid "MerchantID"
 msgstr ""
 
-#: tutor/Admin/Settings.php:151
+#: tutor/Admin/Settings.php:152
 msgctxt "ECPay"
 msgid "HashKey"
 msgstr ""
 
-#: tutor/Admin/Settings.php:157
+#: tutor/Admin/Settings.php:158
 msgctxt "ECPay"
 msgid "HashIV"
 msgstr ""
 
-#: tutor/Admin/Settings.php:163
+#: tutor/Admin/Settings.php:164
 msgid "NewebPay settings"
 msgstr ""
 
-#: tutor/Admin/Settings.php:185
+#: tutor/Admin/Settings.php:186
 msgctxt "NewebPay"
 msgid "MerchantID"
 msgstr ""
 
-#: tutor/Admin/Settings.php:191
+#: tutor/Admin/Settings.php:192
 msgctxt "NewebPay"
 msgid "HashKey"
 msgstr ""
 
-#: tutor/Admin/Settings.php:197
+#: tutor/Admin/Settings.php:198
 msgctxt "NewebPay"
 msgid "HashIV"
 msgstr ""
 
-#: tutor/Admin/Settings.php:203
+#: tutor/Admin/Settings.php:204
 msgid "PAYUNi settings"
 msgstr ""
 
-#: tutor/Admin/Settings.php:225
+#: tutor/Admin/Settings.php:226
 msgctxt "PAYUNi"
 msgid "MerID"
 msgstr ""
 
-#: tutor/Admin/Settings.php:231
+#: tutor/Admin/Settings.php:232
 msgctxt "PAYUNi"
 msgid "HashKey"
 msgstr ""
 
-#: tutor/Admin/Settings.php:237
+#: tutor/Admin/Settings.php:238
 msgctxt "PAYUNi"
 msgid "HashIV"
 msgstr ""
 
-#: tutor/Admin/Settings.php:243
+#: tutor/Admin/Settings.php:244
 msgid "SmilePay settings"
 msgstr ""
 
-#: tutor/Admin/Settings.php:265
+#: tutor/Admin/Settings.php:266
 msgctxt "SmilePay"
 msgid "Dcvc"
 msgstr ""
 
-#: tutor/Admin/Settings.php:271
+#: tutor/Admin/Settings.php:272
 msgctxt "SmilePay"
 msgid "Rvg2c"
 msgstr ""
 
-#: tutor/Admin/Settings.php:277
+#: tutor/Admin/Settings.php:278
 msgctxt "SmilePay"
 msgid "Verifykey"
 msgstr ""
 
-#: tutor/Admin/Settings.php:283
+#: tutor/Admin/Settings.php:284
 msgctxt "SmilePay"
 msgid "Rotcheck"
 msgstr ""
 
-#: tutor/Admin/Settings.php:304
+#: tutor/Admin/Settings.php:305
 msgid "Trade no prefix only letters and numbers allowed, and maximum length is 3 characters."
 msgstr ""
 

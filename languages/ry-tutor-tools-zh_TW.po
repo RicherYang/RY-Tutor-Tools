@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-06-29T20:45:49+08:00\n"
-"PO-Revision-Date: 2026-07-26 23:12+0800\n"
+"PO-Revision-Date: 2026-07-31 12:17+0800\n"
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
@@ -28,7 +28,7 @@ msgstr "https://richer.tw/"
 msgid "Richer Yang"
 msgstr "Richer Yang"
 
-#: includes/ry-general/Page/html/log-info.php:63
+#: includes/ry-general/Page/html/log-info.php:65
 msgid "Download"
 msgstr "下載"
 
@@ -38,30 +38,30 @@ msgstr "下載"
 msgid "%1$s: Your <a href=\"%2$s\">license</a> is not activated yet!"
 msgstr "%1$s: 你的<a href=\"%2$s\">授權</a>尚未啟用！"
 
-#: includes/ry-general/Page/Logs.php:27
-#: includes/ry-general/Page/Logs.php:75
+#: includes/ry-general/Page/Logs.php:29
+#: includes/ry-general/Page/Logs.php:78
 msgid "Logs"
 msgstr "紀錄"
 
-#: includes/ry-general/Page/Logs.php:136
+#: includes/ry-general/Page/Logs.php:158
 msgid "Delete successful."
 msgstr "刪除成功。"
 
-#: includes/ry-general/Page/Logs.php:143
+#: includes/ry-general/Page/Logs.php:165
 msgid "Delete failed."
 msgstr "刪除失敗。"
 
 #. translators: %s: Path of log file
-#: includes/ry-general/Page/html/log-info.php:5
+#: includes/ry-general/Page/html/log-info.php:10
 #, php-format
 msgid "Viewing log file %s"
 msgstr "檢視紀錄檔 %s"
 
-#: includes/ry-general/Page/html/log-info.php:36
+#: includes/ry-general/Page/html/log-info.php:41
 msgid "Details"
 msgstr "詳細資訊"
 
-#: includes/ry-general/Page/html/log-info.php:71
+#: includes/ry-general/Page/html/log-info.php:70
 msgid "Delete Permanently"
 msgstr "永久刪除"
 
@@ -75,7 +75,7 @@ msgstr "紀錄檔案"
 
 #. Plugin Name of the plugin
 #: ry-tutor-tools.php
-#: admin/admin.php:43
+#: admin/Admin.php:45
 msgid "RY Tools for Tutor LMS"
 msgstr "RY Tools for Tutor LMS"
 
@@ -90,52 +90,52 @@ msgid "Tutor LMS payment tools"
 msgstr "Tutor LMS payment tools"
 
 #. translators: %1$s: Name of this plugin %2$s: min require version
-#: admin/admin.php:42
+#: admin/Admin.php:44
 #, php-format
 msgid "<strong>%1$s</strong> is inactive. It require Tutor LMS version %2$s or newer."
 msgstr "<strong>%1$s</strong> 暫停運作。 需求 Tutor LMS %2$s 以上版本。"
 
-#: tutor/Admin/Settings.php:43
+#: tutor/Admin/Settings.php:44
 msgid "RY Tools"
 msgstr "RY Tools"
 
-#: tutor/Admin/Settings.php:49
+#: tutor/Admin/Settings.php:50
 msgid "Service provider"
 msgstr "服務供應商"
 
-#: tutor/Admin/Settings.php:72
+#: tutor/Admin/Settings.php:73
 msgid "PAYUNi support"
 msgstr "統一支援"
 
-#: tutor/Admin/Settings.php:203
+#: tutor/Admin/Settings.php:204
 msgid "PAYUNi settings"
 msgstr "統一金流設定"
 
-#: tutor/Admin/Settings.php:138
-#: tutor/Admin/Settings.php:178
-#: tutor/Admin/Settings.php:218
-#: tutor/Admin/Settings.php:258
+#: tutor/Admin/Settings.php:139
+#: tutor/Admin/Settings.php:179
+#: tutor/Admin/Settings.php:219
+#: tutor/Admin/Settings.php:259
 msgid "Sandbox"
 msgstr "測試模式"
 
-#: tutor/Admin/Settings.php:140
-#: tutor/Admin/Settings.php:180
-#: tutor/Admin/Settings.php:220
-#: tutor/Admin/Settings.php:260
+#: tutor/Admin/Settings.php:141
+#: tutor/Admin/Settings.php:181
+#: tutor/Admin/Settings.php:221
+#: tutor/Admin/Settings.php:261
 msgid "Note: Recommend using this for development purposes only."
 msgstr "注意：僅建議基於開發需求使用本功能。"
 
-#: tutor/Admin/Settings.php:225
+#: tutor/Admin/Settings.php:226
 msgctxt "PAYUNi"
 msgid "MerID"
 msgstr "商店代號"
 
-#: tutor/Admin/Settings.php:231
+#: tutor/Admin/Settings.php:232
 msgctxt "PAYUNi"
 msgid "HashKey"
 msgstr "Hash Key"
 
-#: tutor/Admin/Settings.php:237
+#: tutor/Admin/Settings.php:238
 msgctxt "PAYUNi"
 msgid "HashIV"
 msgstr "Hash IV"
@@ -144,101 +144,101 @@ msgstr "Hash IV"
 msgid "Transaction data processing… DO NOT refresh or close the webpage."
 msgstr "資料傳輸中… 請勿重新整理或關閉網頁。"
 
-#: tutor/Admin/Settings.php:99
+#: tutor/Admin/Settings.php:100
 msgid "Trade no prefix"
 msgstr "交易編號前綴字"
 
-#: tutor/Admin/Settings.php:100
+#: tutor/Admin/Settings.php:101
 msgid "The prefix string of trade no. Only letters and numbers allowed."
 msgstr "交易編號前綴字符串。只允許使用英文字母與數字。"
 
-#: tutor/Admin/Settings.php:107
+#: tutor/Admin/Settings.php:108
 msgid "Payment item name"
 msgstr "金流商品名稱 "
 
-#: tutor/Admin/Settings.php:108
+#: tutor/Admin/Settings.php:109
 msgid "If empty use the first course name."
 msgstr "如果未輸入，將使用第一個課程名稱。"
 
-#: tutor/Admin/Settings.php:304
+#: tutor/Admin/Settings.php:305
 msgid "Trade no prefix only letters and numbers allowed, and maximum length is 3 characters."
 msgstr "訂單編號前綴只允許使用英文字母與數字，且不得超過 3 個字元。"
 
-#: tutor/Admin/Settings.php:56
+#: tutor/Admin/Settings.php:57
 msgid "ECPay support"
 msgstr "綠界支援"
 
-#: tutor/Admin/Settings.php:64
+#: tutor/Admin/Settings.php:65
 msgid "NewebPay support"
 msgstr "藍新支援"
 
-#: tutor/Admin/Settings.php:80
+#: tutor/Admin/Settings.php:81
 msgid "SmilePay support"
 msgstr "速買配支援"
 
-#: tutor/Admin/Settings.php:123
+#: tutor/Admin/Settings.php:124
 msgid "ECPay settings"
 msgstr "綠界金流設定"
 
-#: tutor/Admin/Settings.php:145
+#: tutor/Admin/Settings.php:146
 msgctxt "ECPay"
 msgid "MerchantID"
 msgstr "商店代號"
 
-#: tutor/Admin/Settings.php:151
+#: tutor/Admin/Settings.php:152
 msgctxt "ECPay"
 msgid "HashKey"
 msgstr "HashKey"
 
-#: tutor/Admin/Settings.php:157
+#: tutor/Admin/Settings.php:158
 msgctxt "ECPay"
 msgid "HashIV"
 msgstr "HashIV"
 
-#: tutor/Admin/Settings.php:163
+#: tutor/Admin/Settings.php:164
 msgid "NewebPay settings"
 msgstr "藍新金流設定"
 
-#: tutor/Admin/Settings.php:185
+#: tutor/Admin/Settings.php:186
 msgctxt "NewebPay"
 msgid "MerchantID"
 msgstr "商店代號"
 
-#: tutor/Admin/Settings.php:191
+#: tutor/Admin/Settings.php:192
 msgctxt "NewebPay"
 msgid "HashKey"
 msgstr "HashKey"
 
-#: tutor/Admin/Settings.php:197
+#: tutor/Admin/Settings.php:198
 msgctxt "NewebPay"
 msgid "HashIV"
 msgstr "HashIV"
 
-#: tutor/Admin/Settings.php:243
+#: tutor/Admin/Settings.php:244
 msgid "SmilePay settings"
 msgstr "速買配金流設定"
 
-#: tutor/Admin/Settings.php:265
+#: tutor/Admin/Settings.php:266
 msgctxt "SmilePay"
 msgid "Dcvc"
 msgstr "商家代號 (Dcvc)"
 
-#: tutor/Admin/Settings.php:271
+#: tutor/Admin/Settings.php:272
 msgctxt "SmilePay"
 msgid "Rvg2c"
 msgstr "參數碼 (Rvg2c)"
 
-#: tutor/Admin/Settings.php:277
+#: tutor/Admin/Settings.php:278
 msgctxt "SmilePay"
 msgid "Verifykey"
 msgstr "檢查碼 (Verify_key)"
 
-#: tutor/Admin/Settings.php:283
+#: tutor/Admin/Settings.php:284
 msgctxt "SmilePay"
 msgid "Rotcheck"
 msgstr "驗證參數"
 
-#: includes/ry-general/Page/Logs.php:77
+#: includes/ry-general/Page/Logs.php:80
 msgid "No logs found."
 msgstr "没有紀錄檔案。"
 
@@ -249,21 +249,21 @@ msgstr "没有紀錄檔案。"
 msgid "Title"
 msgstr "標題"
 
-#: tutor/Admin/Settings.php:131
-#: tutor/Admin/Settings.php:171
-#: tutor/Admin/Settings.php:211
-#: tutor/Admin/Settings.php:251
+#: tutor/Admin/Settings.php:132
+#: tutor/Admin/Settings.php:172
+#: tutor/Admin/Settings.php:212
+#: tutor/Admin/Settings.php:252
 msgid "Debug log"
 msgstr "除錯記錄"
 
-#: tutor/Admin/Settings.php:133
-#: tutor/Admin/Settings.php:173
-#: tutor/Admin/Settings.php:213
-#: tutor/Admin/Settings.php:253
+#: tutor/Admin/Settings.php:134
+#: tutor/Admin/Settings.php:174
+#: tutor/Admin/Settings.php:214
+#: tutor/Admin/Settings.php:254
 msgid "Note: this may log personal information."
 msgstr "注意：本紀錄可能包含個人資料。"
 
-#: tutor/Admin/Settings.php:92
+#: tutor/Admin/Settings.php:93
 msgid "General settings"
 msgstr "一般設定"
 
@@ -295,35 +295,35 @@ msgctxt "gateway label"
 msgid "SmilePay Credit"
 msgstr "速買配金流信用卡"
 
-#: tutor/Admin/Settings.php:58
+#: tutor/Admin/Settings.php:59
 msgid "Enable ECPay gateway method."
 msgstr "啟用 綠界金流 模組。"
 
-#: tutor/Admin/Settings.php:66
+#: tutor/Admin/Settings.php:67
 msgid "Enable NewebPay gateway method."
 msgstr "啟用 藍新金流 模組。"
 
-#: tutor/Admin/Settings.php:74
+#: tutor/Admin/Settings.php:75
 msgid "Enable PAYUNi gateway method."
 msgstr "啟用 統一金流 模組。"
 
-#: tutor/Admin/Settings.php:82
+#: tutor/Admin/Settings.php:83
 msgid "Enable SmilePay gateway method."
 msgstr "啟用 速買配金流 模組。"
 
-#: tutor/Admin/Settings.php:87
+#: tutor/Admin/Settings.php:88
 msgid "After switch enabled status, you need to reload the page to display the settings."
 msgstr "切換啟用狀態後，需要重新載入頁面才能顯示設定。"
 
-#: tutor/Admin/Settings.php:115
+#: tutor/Admin/Settings.php:116
 msgid "Address only TW"
 msgstr "地址只有台灣"
 
-#: tutor/Admin/Settings.php:116
+#: tutor/Admin/Settings.php:117
 msgid "Change country list only Taiwan."
 msgstr "調整國家選單只有台灣。"
 
-#: tutor/Admin/Settings.php:117
+#: tutor/Admin/Settings.php:118
 msgid "Note: This will overwrite the TutorLMS original file, and it CANNOT be recovered."
 msgstr "注意：這將覆蓋 TutorLMS 的原始文件，並且「無法」恢復。"
 
@@ -344,7 +344,7 @@ msgid " (%s)"
 msgstr " (%s)"
 
 #. translators: %d: Number of days
-#: includes/ry-general/Page/html/log-info.php:75
+#: includes/ry-general/Page/html/log-info.php:74
 #, php-format
 msgid "Log file will delete after %d days"
 msgstr "紀錄檔案將在 %d 天後刪除"
@@ -367,11 +367,16 @@ msgstr "允許 RY Plugin 追蹤使用情況"
 msgid "Read about what usage data is tracked at: %s ."
 msgstr "閱讀 %s 以理解我們追蹤那些數據。"
 
-#: includes/ry-general/Page/Option.php:21
-#: includes/ry-general/Page/Option.php:35
+#: includes/ry-general/Page/Option.php:23
+#: includes/ry-general/Page/Option.php:37
 msgid "Options"
 msgstr "設定"
 
-#: includes/ry-general/Page/Option.php:64
+#: includes/ry-general/Page/Option.php:72
 msgid "Settings saved."
 msgstr "設定已儲存。"
+
+#: includes/ry-general/Page/Option.php:41
+#: includes/ry-paid/Page/License.php:75
+msgid "Save Changes"
+msgstr "儲存設定"
