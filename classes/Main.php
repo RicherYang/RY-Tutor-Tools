@@ -4,7 +4,7 @@ namespace RY\Tutor;
 
 defined('ABSPATH') or exit;
 
-use RY\General\V20260729\AbstractBasic;
+use RY\General\V20260801\AbstractBasic;
 use RY\Tutor\Admin\Admin;
 use RY\Tutor\Tutor\Admin\Settings;
 use RY\Tutor\Tutor\Country;

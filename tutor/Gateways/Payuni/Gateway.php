@@ -4,7 +4,7 @@ namespace RY\Tutor\Tutor\Gateways\Payuni;
 
 defined('ABSPATH') or exit;
 
-use RY\General\V20260729\Logs;
+use RY\General\V20260801\Logs;
 
 final class Gateway
 {
@@ -24,11 +24,20 @@ final class Gateway
 
     protected function do_init(): void
     {
+        add_filter('ry-plugin/log_enabled', [$this, 'set_log_enabled'], 10, 2);
+
         add_filter('tutor_payment_gateways_with_class', [$this, 'add_method']);
         add_filter('tutor_payment_gateways', [$this, 'add_method_setting'], 100);
         add_filter('tutor_payment_method_labels', [$this, 'add_method_label']);
+    }
 
-        Logs::set_log(tutor_utils()->get_option('RY_payuni_log', false), self::LOG_HANDLE);
+    public function set_log_enabled(bool $enabled, string $handle): bool
+    {
+        if ($handle === self::LOG_HANDLE) {
+            return tutor_utils()->get_option('RY_ecpay_log', false);
+        }
+
+        return $enabled;
     }
 
     public function add_method($methods)

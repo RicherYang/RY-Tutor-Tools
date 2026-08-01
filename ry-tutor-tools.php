@@ -4,7 +4,7 @@
  * Plugin Name: RY Tools for Tutor LMS
  * Plugin URI: https://ry-plugin.com/ry-tutor-tools
  * Description: Tutor LMS payment tools
- * Version: 2026.7.31
+ * Version: 2026.8.1
  * Requires at least: 6.8
  * Requires PHP: 8.2
  * Requires Plugins: tutor
@@ -20,7 +20,7 @@ use RY\Tutor\Main;
 
 defined('ABSPATH') or exit;
 
-define('RY_TFTUTOR_VERSION', '2026.7.31');
+define('RY_TFTUTOR_VERSION', '2026.8.1');
 define('RY_TFTUTOR_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('RY_TFTUTOR_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('RY_TFTUTOR_PLUGIN_BASENAME', plugin_basename(__FILE__));
