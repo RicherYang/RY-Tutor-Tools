@@ -2,7 +2,7 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: RY Tools for Tutor LMS 2026.7.31\n"
+"Project-Id-Version: RY Tools for Tutor LMS 2026.8.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ry-tutor-tools\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -341,37 +341,37 @@ msgstr ""
 msgid "Trade no prefix only letters and numbers allowed, and maximum length is 3 characters."
 msgstr ""
 
-#: tutor/Gateways/Ecpay/Gateway.php:48
-#: tutor/Gateways/Ecpay/Gateway.php:58
-#: tutor/Gateways/Ecpay/Gateway.php:68
+#: tutor/Gateways/Ecpay/Gateway.php:55
+#: tutor/Gateways/Ecpay/Gateway.php:65
+#: tutor/Gateways/Ecpay/Gateway.php:75
 msgctxt "gateway label"
 msgid "ECPay Credit"
 msgstr ""
 
-#: tutor/Gateways/Ecpay/Gateway.php:57
-#: tutor/Gateways/Newebpay/Gateway.php:57
-#: tutor/Gateways/Payuni/Gateway.php:57
-#: tutor/Gateways/Smilepay/Gateway.php:57
+#: tutor/Gateways/Ecpay/Gateway.php:64
+#: tutor/Gateways/Newebpay/Gateway.php:66
+#: tutor/Gateways/Payuni/Gateway.php:66
+#: tutor/Gateways/Smilepay/Gateway.php:66
 msgid "Title"
 msgstr ""
 
-#: tutor/Gateways/Newebpay/Gateway.php:48
-#: tutor/Gateways/Newebpay/Gateway.php:58
-#: tutor/Gateways/Newebpay/Gateway.php:68
+#: tutor/Gateways/Newebpay/Gateway.php:57
+#: tutor/Gateways/Newebpay/Gateway.php:67
+#: tutor/Gateways/Newebpay/Gateway.php:77
 msgctxt "gateway label"
 msgid "NewebPay Credit"
 msgstr ""
 
-#: tutor/Gateways/Payuni/Gateway.php:48
-#: tutor/Gateways/Payuni/Gateway.php:58
-#: tutor/Gateways/Payuni/Gateway.php:68
+#: tutor/Gateways/Payuni/Gateway.php:57
+#: tutor/Gateways/Payuni/Gateway.php:67
+#: tutor/Gateways/Payuni/Gateway.php:77
 msgctxt "gateway label"
 msgid "PAYUNi Credit"
 msgstr ""
 
-#: tutor/Gateways/Smilepay/Gateway.php:48
-#: tutor/Gateways/Smilepay/Gateway.php:58
-#: tutor/Gateways/Smilepay/Gateway.php:68
+#: tutor/Gateways/Smilepay/Gateway.php:57
+#: tutor/Gateways/Smilepay/Gateway.php:67
+#: tutor/Gateways/Smilepay/Gateway.php:77
 msgctxt "gateway label"
 msgid "SmilePay Credit"
 msgstr ""

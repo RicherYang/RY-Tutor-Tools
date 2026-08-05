@@ -26,7 +26,7 @@ final class Admin extends AbstractAdmin
 
     protected function do_init(): void
     {
-        dd_action('admin_notices', [$this, 'need_tutor']);
+        add_action('admin_notices', [$this, 'need_tutor']);
 
         $this->license = License::instance();
         add_filter('ry-plugin/license_list', [$this, 'add_license']);
