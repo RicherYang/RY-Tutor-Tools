@@ -1,13 +1,13 @@
 {
     "name": "ry/tutor-tools",
-    "version": "2026.8.1",
+    "version": "2026.8.10",
     "require": {
         "woocommerce/action-scheduler": "^4.0"
     },
     "autoload": {
         "psr-4": {
             "Ollyo\\PaymentHub\\": "../tutor/ecommerce/PaymentGateways/Paypal/src",
-            "RY\\General\\V20260801\\": "includes/ry-general",
+            "RY\\General\\V20260810\\": "includes/ry-general",
             "RY\\Paid\\V20260729\\": "includes/ry-paid",
             "RY\\Tutor\\": "classes",
             "RY\\Tutor\\Admin\\": "admin",
