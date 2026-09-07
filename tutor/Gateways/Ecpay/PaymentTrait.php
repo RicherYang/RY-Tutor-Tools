@@ -9,40 +9,6 @@ use Ollyo\PaymentHub\Core\Support\System;
 
 trait PaymentTrait
 {
-    protected function add_testmode_filter(): void
-    {
-        add_filter('RY_ecpay_MerchantID', [$this, 'change_test_MerchantID']);
-        add_filter('RY_ecpay_HashKey', [$this, 'change_test_HashKey']);
-        add_filter('RY_ecpay_HashIV', [$this, 'change_test_HashIV']);
-    }
-
-    public function change_test_MerchantID($value)
-    {
-        if (tutor_utils()->get_option('RY_ecpay_testmode', false)) {
-            return '3002607';
-        }
-
-        return $value;
-    }
-
-    public function change_test_HashKey($value)
-    {
-        if (tutor_utils()->get_option('RY_ecpay_testmode', false)) {
-            return 'pwFHCqoQZGmho4w6';
-        }
-
-        return $value;
-    }
-
-    public function change_test_HashIV($value)
-    {
-        if (tutor_utils()->get_option('RY_ecpay_testmode', false)) {
-            return 'EkRm7iFT261dpevs';
-        }
-
-        return $value;
-    }
-
     public function createPayment()
     {
         try {

@@ -17,9 +17,4 @@ final class Credit extends BasePayment
     {
         return true;
     }
-
-    public function setup(): void
-    {
-        $this->add_testmode_filter();
-    }
 }

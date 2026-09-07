@@ -10,50 +10,6 @@ use Ollyo\PaymentHub\Core\Support\Uri;
 
 trait PaymentTrait
 {
-    protected function add_testmode_filter(): void
-    {
-        add_filter('RY_smilepay_Dcvc', [$this, 'change_test_Dcvc']);
-        add_filter('RY_smilepay_Rvg2c', [$this, 'change_test_Rvg2c']);
-        add_filter('RY_smilepay_Verifykey', [$this, 'change_test_Verifykey']);
-        add_filter('RY_smilepay_Rotcheck', [$this, 'change_test_Rotcheck']);
-    }
-
-    public function change_test_Dcvc($value)
-    {
-        if (tutor_utils()->get_option('RY_smilepay_testmode', false)) {
-            return '107';
-        }
-
-        return $value;
-    }
-
-    public function change_test_Rvg2c($value)
-    {
-        if (tutor_utils()->get_option('RY_smilepay_testmode', false)) {
-            return '1';
-        }
-
-        return $value;
-    }
-
-    public function change_test_Verifykey($value)
-    {
-        if (tutor_utils()->get_option('RY_smilepay_testmode', false)) {
-            return '174A02F97A95F72CE301137B3F98D128';
-        }
-
-        return $value;
-    }
-
-    public function change_test_Rotcheck($value)
-    {
-        if (tutor_utils()->get_option('RY_smilepay_testmode', false)) {
-            return '1111';
-        }
-
-        return $value;
-    }
-
     public function createPayment()
     {
         try {

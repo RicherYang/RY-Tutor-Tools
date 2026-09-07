@@ -20,12 +20,7 @@ final class Response extends AbstractsApi
         return self::$_instance;
     }
 
-    protected function do_init(): void
-    {
-        add_filter('RY_ecpay_MerchantID', [$this, 'change_test_MerchantID']);
-        add_filter('RY_ecpay_HashKey', [$this, 'change_test_HashKey']);
-        add_filter('RY_ecpay_HashIV', [$this, 'change_test_HashIV']);
-    }
+    protected function do_init(): void {}
 
     public function check_payload_data($ipn_info)
     {
