@@ -114,17 +114,6 @@ final class Api extends AbstractsApi
             }
 
             switch ($payment::PAYMENT_TYPE) {
-                case 'ALL':
-                    $data['CREDIT'] = 1;
-                    $data['APPLEPAY'] = 1;
-                    $data['ANDROIDPAY'] = 1;
-                    $data['SAMSUNGPAY'] = 1;
-                    $data['LINEPAY'] = 1;
-                    $data['CREDITAE'] = 1;
-                    $data['ESUNWALLET'] = 1;
-                    $data['TAIWANPAY'] = 1;
-                    $data['TWQR'] = 1;
-                    break;
             }
         }
 

@@ -96,11 +96,6 @@ final class Api extends AbstractsApi
             $data['ChoosePayment'] = $payment::PAYMENT_TYPE;
 
             switch ($payment::PAYMENT_TYPE) {
-                case 'All':
-                    $data['ChoosePayment'] = 'ALL';
-                    $data['IgnorePayment'] = ['ATM', 'CVS', 'BARCODE', 'BNPL', 'WeiXin'];
-                    $data['IgnorePayment'] = implode('#', $data['IgnorePayment']);
-                    break;
                 case 'Credit':
                     $data['IgnorePayment'] = 'DigitalPayment';
                     break;

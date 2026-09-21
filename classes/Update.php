@@ -26,9 +26,9 @@ final class Update
             if (is_dir($old_dir)) {
                 $new_dir = Logs::get_log_directory();
                 foreach (new \FilesystemIterator($old_dir, \FilesystemIterator::SKIP_DOTS) as $file) {
-                    @rename($file->getPathname(), $new_dir . $file->getFilename());
+                    @rename($file->getPathname(), $new_dir . $file->getFilename()); // phpcs:ignore WordPress.WP.AlternativeFunctions.rename_rename
                 }
-                @rmdir($old_dir);
+                @rmdir($old_dir); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_rmdir
             }
 
             Main::update_option('version', '2026.7.27', true);
@@ -57,7 +57,7 @@ final class Update
                                     $handle = implode('-', array_slice($parts, 0, -3));
                                     if (wp_hash($handle) === $hash_suffix) {
                                         $file_name = sanitize_file_name(implode('-', [$handle, $date_suffix, wp_hash($handle . $date_suffix)]) . '.log');
-                                        rename($file->getPathname(), $file_dir . '/' . $file_name);
+                                        rename($file->getPathname(), $file_dir . '/' . $file_name); // phpcs:ignore WordPress.WP.AlternativeFunctions.rename_rename
                                     }
                                 }
                             }
