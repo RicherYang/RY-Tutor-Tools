@@ -13,9 +13,24 @@ function getFilesInDir(dirPath) {
         return [];
     }
 
-    return fs.readdirSync(dirPath, { withFileTypes: true })
-        .filter((entry) => entry.isFile())
-        .map((entry) => path.join(dirPath, entry.name));
+    const files = [];
+
+    function walk(currentDir) {
+        for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
+            const fullPath = path.join(currentDir, entry.name);
+
+            if (entry.isDirectory()) {
+                walk(fullPath);
+                continue;
+            }
+
+            files.push(fullPath);
+        }
+    }
+
+    walk(dirPath);
+
+    return files;
 }
 
 function getCopyPatterns() {

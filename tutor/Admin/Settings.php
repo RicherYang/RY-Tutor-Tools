@@ -75,14 +75,6 @@ final class Settings
                             'toggle_blocks' => 'payuni',
                         ],
                         [
-                            'key' => 'RY_enabled_smilepay',
-                            'type' => 'toggle_switch',
-                            'label' => __('SmilePay support', 'ry-tutor-tools'),
-                            'default' => 'off',
-                            'desc' => __('Enable SmilePay gateway method.', 'ry-tutor-tools'),
-                            'toggle_blocks' => 'smilepay',
-                        ],
-                        [
                             'type' => 'label',
                             'desc' => __('After switch enabled status, you need to reload the page to display the settings.', 'ry-tutor-tools'),
                         ],
@@ -239,52 +231,6 @@ final class Settings
                         ],
                     ],
                 ],
-                'block_smilepay' => [
-                    'label' => __('SmilePay settings', 'ry-tutor-tools'),
-                    'desc' => '',
-                    'slug' => 'smilepay',
-                    'block_type' => 'uniform',
-                    'fields' => [
-                        [
-                            'key' => 'RY_smilepay_log',
-                            'type' => 'toggle_switch',
-                            'label' => __('Debug log', 'ry-tutor-tools'),
-                            'default' => 'off',
-                            'desc' => __('Note: this may log personal information.', 'ry-tutor-tools'),
-                        ],
-                        [
-                            'key' => 'RY_smilepay_testmode',
-                            'type' => 'toggle_switch',
-                            'label' => __('Sandbox', 'ry-tutor-tools'),
-                            'default' => 'off',
-                            'desc' => __('Note: Recommend using this for development purposes only.', 'ry-tutor-tools'),
-                        ],
-                        [
-                            'key' => 'RY_smilepay_Dcvc',
-                            'type' => 'text',
-                            'label' => _x('Dcvc', 'SmilePay', 'ry-tutor-tools'),
-                            'default' => '',
-                        ],
-                        [
-                            'key' => 'RY_smilepay_Rvg2c',
-                            'type' => 'text',
-                            'label' => _x('Rvg2c', 'SmilePay', 'ry-tutor-tools'),
-                            'default' => '',
-                        ],
-                        [
-                            'key' => 'RY_smilepay_Verifykey',
-                            'type' => 'text',
-                            'label' => _x('Verifykey', 'SmilePay', 'ry-tutor-tools'),
-                            'default' => '',
-                        ],
-                        [
-                            'key' => 'RY_smilepay_Rotcheck',
-                            'type' => 'text',
-                            'label' => _x('Rotcheck', 'SmilePay', 'ry-tutor-tools'),
-                            'default' => '',
-                        ],
-                    ],
-                ],
             ],
         ];
 
@@ -296,7 +242,7 @@ final class Settings
         $success = true;
         $message = '';
 
-        foreach (['ecpay', 'newebpay', 'payuni', 'smilepay'] as $key) {
+        foreach (['ecpay', 'newebpay', 'payuni'] as $key) {
             $enable_gateway = $options['RY_enabled_' . $key] ?? 'off';
             if ('on' === $enable_gateway) {
                 if (!preg_match('/^[a-z0-9]{0,3}$/i', $options['RY_' . $key . '_prefix'] ?? '')) {

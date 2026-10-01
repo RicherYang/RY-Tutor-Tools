@@ -13,6 +13,8 @@ final class Credit extends BasePayment
 
     use PaymentTrait;
 
+    public function setup(): void {}
+
     public function check(): bool
     {
         return true;

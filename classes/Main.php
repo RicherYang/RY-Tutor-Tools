@@ -11,7 +11,6 @@ use RY\Tutor\Tutor\Country;
 use RY\Tutor\Tutor\Gateways\Ecpay\Gateway as EcpayGateway;
 use RY\Tutor\Tutor\Gateways\Newebpay\Gateway as NewebpayGateway;
 use RY\Tutor\Tutor\Gateways\Payuni\Gateway as PayuniGateway;
-use RY\Tutor\Tutor\Gateways\Smilepay\Gateway as SmilepayGateway;
 
 final class Main extends AbstractBasic
 {
@@ -72,10 +71,6 @@ final class Main extends AbstractBasic
 
                     if (tutor_utils()->get_option('RY_enabled_payuni', false)) {
                         PayuniGateway::instance();
-                    }
-
-                    if (tutor_utils()->get_option('RY_enabled_smilepay', false)) {
-                        SmilepayGateway::instance();
                     }
                 }
 
