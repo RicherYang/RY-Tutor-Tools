@@ -1,6 +1,6 @@
 {
     "name": "ry/tutor-tools",
-    "version": "2026.8.10",
+    "version": "2026.10.2",
     "require": {
         "woocommerce/action-scheduler": "^4.0"
     },

@@ -212,9 +212,9 @@ msgstr "HashIV"
 msgid "No logs found."
 msgstr "没有紀錄檔案。"
 
-#: tutor/Gateways/Ecpay/Gateway.php:64
-#: tutor/Gateways/Newebpay/Gateway.php:66
-#: tutor/Gateways/Payuni/Gateway.php:66
+#: tutor/Gateways/Ecpay/Gateway.php:67
+#: tutor/Gateways/Newebpay/Gateway.php:67
+#: tutor/Gateways/Payuni/Gateway.php:67
 msgid "Title"
 msgstr "標題"
 
@@ -234,23 +234,23 @@ msgstr "注意：本紀錄可能包含個人資料。"
 msgid "General settings"
 msgstr "一般設定"
 
-#: tutor/Gateways/Ecpay/Gateway.php:55
-#: tutor/Gateways/Ecpay/Gateway.php:65
-#: tutor/Gateways/Ecpay/Gateway.php:75
+#: tutor/Gateways/Ecpay/Gateway.php:58
+#: tutor/Gateways/Ecpay/Gateway.php:68
+#: tutor/Gateways/Ecpay/Gateway.php:78
 msgctxt "gateway label"
 msgid "ECPay Credit"
 msgstr "綠界金流信用卡"
 
-#: tutor/Gateways/Newebpay/Gateway.php:57
-#: tutor/Gateways/Newebpay/Gateway.php:67
-#: tutor/Gateways/Newebpay/Gateway.php:77
+#: tutor/Gateways/Newebpay/Gateway.php:58
+#: tutor/Gateways/Newebpay/Gateway.php:68
+#: tutor/Gateways/Newebpay/Gateway.php:78
 msgctxt "gateway label"
 msgid "NewebPay Credit"
 msgstr "藍新金流信用卡"
 
-#: tutor/Gateways/Payuni/Gateway.php:57
-#: tutor/Gateways/Payuni/Gateway.php:67
-#: tutor/Gateways/Payuni/Gateway.php:77
+#: tutor/Gateways/Payuni/Gateway.php:58
+#: tutor/Gateways/Payuni/Gateway.php:68
+#: tutor/Gateways/Payuni/Gateway.php:78
 msgctxt "gateway label"
 msgid "PAYUNi Credit"
 msgstr "統一金流信用卡"

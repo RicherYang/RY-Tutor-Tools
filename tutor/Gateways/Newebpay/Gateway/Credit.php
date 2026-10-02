@@ -1,19 +1,19 @@
 <?php
 
-namespace RY\Tutor\Tutor\Gateways\Newebpay;
+namespace RY\Tutor\Tutor\Gateways\Newebpay\Gateway;
 
 defined('ABSPATH') or exit;
 
-use RY\Tutor\Tutor\Gateways\Newebpay\Payments\Credit;
+use RY\Tutor\Tutor\Gateways\Newebpay\Payment\Credit as Payment;
 use Tutor\PaymentGateways\GatewayBase;
 
-final class GatewayCredit extends GatewayBase
+final class Credit extends GatewayBase
 {
     private $dir_name = 'Payments';
 
-    private $config_class = GatewayCreditConfig::class;
+    private $config_class = CreditConfig::class;
 
-    private $payment_class = Credit::class;
+    private $payment_class = Payment::class;
 
     public function get_root_dir_name(): string
     {

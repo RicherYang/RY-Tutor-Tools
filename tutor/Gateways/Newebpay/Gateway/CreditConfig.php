@@ -1,15 +1,15 @@
 <?php
 
-namespace RY\Tutor\Tutor\Gateways\Ecpay;
+namespace RY\Tutor\Tutor\Gateways\Newebpay\Gateway;
 
 defined('ABSPATH') or exit;
 
 use RY\Tutor\Tutor\Gateways\Config;
 use Tutor\PaymentGateways\Configs\PaymentUrlsTrait;
 
-final class GatewayCreditConfig extends Config
+final class CreditConfig extends Config
 {
-    protected $name = 'ry_ecpay_credit';
+    protected $name = 'ry_newebpay_credit';
 
     private $title = '';
 
@@ -26,13 +26,9 @@ final class GatewayCreditConfig extends Config
 
     public function is_configured()
     {
-        if (!tutor_utils()->get_option('RY_ecpay_testmode', false)) {
-            return !empty(tutor_utils()->get_option('RY_ecpay_MerchantID', ''))
-                && !empty(tutor_utils()->get_option('RY_ecpay_HashKey', ''))
-                && !empty(tutor_utils()->get_option('RY_ecpay_HashIV', ''));
-        }
-
-        return true;
+        return !empty(tutor_utils()->get_option('RY_newebpay_MerchantID', ''))
+            && !empty(tutor_utils()->get_option('RY_newebpay_HashKey', ''))
+            && !empty(tutor_utils()->get_option('RY_newebpay_HashIV', ''));
     }
 
     public function getTitle(): string

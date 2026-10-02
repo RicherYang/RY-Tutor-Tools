@@ -21,56 +21,8 @@ final class Update
             return;
         }
 
-        if (version_compare($now_version, '2026.7.27', '<')) {
-            $old_dir = WP_CONTENT_DIR . '/ry-logs';
-            if (is_dir($old_dir)) {
-                $new_dir = Logs::get_log_directory();
-                foreach (new \FilesystemIterator($old_dir, \FilesystemIterator::SKIP_DOTS) as $file) {
-                    @rename($file->getPathname(), $new_dir . $file->getFilename()); // phpcs:ignore WordPress.WP.AlternativeFunctions.rename_rename
-                }
-                @rmdir($old_dir); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_rmdir
-            }
-
-            Main::update_option('version', '2026.7.27', true);
-        }
-
-        if (version_compare($now_version, '2026.7.31', '<')) {
-            add_action('init', function () {
-                as_unschedule_all_actions('RY_log_action');
-            });
-
-            Main::update_option('version', '2026.7.31', true);
-        }
-
-        if (version_compare($now_version, '2026.8.5', '<')) {
-            add_action('init', function () {
-                if (class_exists('\RY\General\V20260801\Logs')) {
-                    $file_dir = \RY\General\V20260801\Logs::get_log_directory();
-                    foreach (new \FilesystemIterator($file_dir, \FilesystemIterator::SKIP_DOTS) as $file) {
-                        if ($file->isFile() && $file->isReadable()) {
-                            if ($file->getExtension() === 'log') {
-                                $file_name = $file->getBasename('.log');
-                                $parts = explode('-', $file_name);
-                                if (count($parts) > 4) {
-                                    $hash_suffix = array_pop($parts);
-                                    $date_suffix = implode('-', array_slice($parts, -3));
-                                    $handle = implode('-', array_slice($parts, 0, -3));
-                                    if (wp_hash($handle) === $hash_suffix) {
-                                        $file_name = sanitize_file_name(implode('-', [$handle, $date_suffix, wp_hash($handle . $date_suffix)]) . '.log');
-                                        rename($file->getPathname(), $file_dir . '/' . $file_name); // phpcs:ignore WordPress.WP.AlternativeFunctions.rename_rename
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    Main::update_option('version', '2026.8.5', true);
-                }
-            });
-        }
-
-        if (version_compare($now_version, '2026.8.12', '<')) {
-            Main::update_option('version', '2026.8.12', true);
+        if (version_compare($now_version, '2026.10.2', '<')) {
+            Main::update_option('version', '2026.10.2', true);
         }
     }
 }

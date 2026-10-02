@@ -1,19 +1,19 @@
 <?php
 
-namespace RY\Tutor\Tutor\Gateways\Ecpay;
+namespace RY\Tutor\Tutor\Gateways\Ecpay\Gateway;
 
 defined('ABSPATH') or exit;
 
-use RY\Tutor\Tutor\Gateways\Ecpay\Payments\Credit;
+use RY\Tutor\Tutor\Gateways\Ecpay\Payment\Credit as Payment;
 use Tutor\PaymentGateways\GatewayBase;
 
-final class GatewayCredit extends GatewayBase
+final class Credit extends GatewayBase
 {
     private $dir_name = 'Payments';
 
-    private $config_class = GatewayCreditConfig::class;
+    private $config_class = CreditConfig::class;
 
-    private $payment_class = Credit::class;
+    private $payment_class = Payment::class;
 
     public function get_root_dir_name(): string
     {

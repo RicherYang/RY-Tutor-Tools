@@ -4,7 +4,8 @@ namespace RY\Tutor\Tutor\Gateways\Newebpay;
 
 defined('ABSPATH') or exit;
 
-use RY\General\V20260810\Logs;
+use RY\Tutor\Tutor\Gateways\Newebpay\Gateway\Credit;
+use RY\Tutor\Tutor\Gateways\Newebpay\Gateway\CreditConfig;
 
 final class Gateway
 {
@@ -34,7 +35,7 @@ final class Gateway
     public function set_log_enabled(bool $enabled, string $handle): bool
     {
         if ($handle === self::LOG_HANDLE) {
-            return tutor_utils()->get_option('RY_ecpay_log', false);
+            return tutor_utils()->get_option('RY_newebpay_log', false);
         }
 
         return $enabled;
@@ -43,8 +44,8 @@ final class Gateway
     public function add_method($methods)
     {
         $methods['ry_newebpay_credit'] = [
-            'gateway_class' => GatewayCredit::class,
-            'config_class' => GatewayCreditConfig::class,
+            'gateway_class' => Credit::class,
+            'config_class' => CreditConfig::class,
         ];
 
         return $methods;

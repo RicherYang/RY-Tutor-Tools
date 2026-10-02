@@ -4,6 +4,9 @@ namespace RY\Tutor\Tutor\Gateways\Ecpay;
 
 defined('ABSPATH') or exit;
 
+use RY\Tutor\Tutor\Gateways\Ecpay\Gateway\Credit;
+use RY\Tutor\Tutor\Gateways\Ecpay\Gateway\CreditConfig;
+
 final class Gateway
 {
     public const LOG_HANDLE = 'ecpay-tutor-api';
@@ -41,8 +44,8 @@ final class Gateway
     public function add_method($methods)
     {
         $methods['ry_ecpay_credit'] = [
-            'gateway_class' => GatewayCredit::class,
-            'config_class' => GatewayCreditConfig::class,
+            'gateway_class' => Credit::class,
+            'config_class' => CreditConfig::class,
         ];
 
         return $methods;

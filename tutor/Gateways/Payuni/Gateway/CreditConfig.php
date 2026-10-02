@@ -1,13 +1,13 @@
 <?php
 
-namespace RY\Tutor\Tutor\Gateways\Payuni;
+namespace RY\Tutor\Tutor\Gateways\Payuni\Gateway;
 
 defined('ABSPATH') or exit;
 
 use RY\Tutor\Tutor\Gateways\Config;
 use Tutor\PaymentGateways\Configs\PaymentUrlsTrait;
 
-final class GatewayCreditConfig extends Config
+final class CreditConfig extends Config
 {
     protected $name = 'ry_payuni_credit';
 
