@@ -11,6 +11,7 @@
  * Author: Richer Yang
  * Author URI: https://richer.tw/
  * License: GPLv3
+ * Update URI: https://ry-plugin.com/ry-tutor-tools
  *
  * Text Domain: ry-tutor-tools
  * Domain Path: /languages
