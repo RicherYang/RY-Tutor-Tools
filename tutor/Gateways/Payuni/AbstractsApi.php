@@ -8,6 +8,8 @@ use RY\Tutor\Tutor\AbstractsApi as BaseAbstractsApi;
 
 abstract class AbstractsApi extends BaseAbstractsApi
 {
+    protected const TRADENO_META_KEY = '_payuni_MerTradeNo';
+
     protected function generate_trade_no($order_ID, $prefix = ''): string
     {
         $trade_no = $this->order_no_to_trade_no($order_ID, $prefix);

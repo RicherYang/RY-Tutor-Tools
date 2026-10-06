@@ -34,6 +34,8 @@ final class Response extends AbstractsApi
                 }
 
                 Logs::log(Gateway::LOG_HANDLE, 'error', 'IPN request check failed', ['response' => $check_value, 'self' => $ipn_info_check_value]);
+            } else {
+                Logs::log(Gateway::LOG_HANDLE, 'error', 'IPN request failed', ['get' => wp_unslash($_GET), 'post' => wp_unslash($_POST)]);
             }
         }
         return false;
@@ -48,10 +50,19 @@ final class Response extends AbstractsApi
             if (is_array($info_value) && !empty($info_value)) {
                 Logs::log(Gateway::LOG_HANDLE, 'info', 'IPN request', ['data' => $info_value]);
                 $info_value['order_id'] = $this->get_order_id($info_value, tutor_utils()->get_option('RY_general_prefix', ''));
-                return $info_value;
+                if ($this->is_used_trade_no($info_value['order_id'], $info_value['MerTradeNo'])) {
+                    $this->save_trade_transaction_id($info_value['order_id'], $info_value['MerTradeNo'], $info_value['TradeNo']);
+
+                    return $info_value;
+                } else {
+                    Logs::log(Gateway::LOG_HANDLE, 'error', 'IPN request TradeNo mismatch', ['data' => $info_value]);
+                }
+            } else {
+                Logs::log(Gateway::LOG_HANDLE, 'error', 'IPN request decrypt empty data', ['data' => $ipn_info]);
             }
+        } else {
+            Logs::log(Gateway::LOG_HANDLE, 'error', 'IPN request decrypt failed', ['data' => $ipn_info]);
         }
-        Logs::log(Gateway::LOG_HANDLE, 'error', 'IPN request decrypt failed', ['data' => $ipn_info]);
 
         return null;
     }

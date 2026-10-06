@@ -84,6 +84,8 @@ final class Api extends AbstractsApi
         Logs::log(Gateway::LOG_HANDLE, 'info', 'Checkout #' . $payment_data->order_id, $data);
         do_action('ry_ecpay_gateway_checkout', $data, $payment_data);
 
+        $this->save_trade_no($payment_data->order_id, $data['MerchantTradeNo']);
+
         $method = 'post';
         $redirect_url = $url;
         $redirect_data = $data;
