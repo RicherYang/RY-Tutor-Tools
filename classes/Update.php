@@ -4,8 +4,6 @@ namespace RY\Tutor;
 
 defined('ABSPATH') or exit;
 
-use RY\General\V20260810\Logs;
-
 final class Update
 {
     public static function update()
@@ -21,8 +19,9 @@ final class Update
             return;
         }
 
-        if (version_compare($now_version, '2026.10.2', '<')) {
-            Main::update_option('version', '2026.10.2', true);
+        if (version_compare($now_version, '2026.11.7', '<')) {
+            wp_unschedule_hook(Main::get_prefix_name('check_expire'));
+            Main::update_option('version', '2026.11.7', true);
         }
     }
 }

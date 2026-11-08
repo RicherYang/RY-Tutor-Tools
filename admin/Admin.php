@@ -4,7 +4,7 @@ namespace RY\Tutor\Admin;
 
 defined('ABSPATH') or exit;
 
-use RY\Paid\V20260729\AbstractAdmin;
+use RY\Paid\V20261107\AbstractAdmin;
 use RY\Tutor\License;
 use RY\Tutor\Main;
 
